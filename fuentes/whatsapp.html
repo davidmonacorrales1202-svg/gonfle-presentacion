@@ -6,25 +6,45 @@
 <link rel="stylesheet" href="../comun.css">
 <style>
 html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
-.lienzo{width:1080px;height:1350px;position:relative;overflow:hidden;background:#fff;display:flex;flex-direction:column}
-.top{background:var(--morado-osc);padding:50px 76px 44px;position:relative;overflow:hidden;color:#D8CEE8}
+.lienzo{width:1080px;height:1350px;position:relative;overflow:hidden;background:#F6F3FA;display:flex;flex-direction:column}
 .blob{position:absolute;border-radius:58% 42% 47% 53%/48% 55% 45% 52%}
-.top .a{width:380px;height:380px;right:-120px;top:-150px;background:var(--amarillo)}
-.top .b{width:200px;height:200px;right:190px;bottom:-130px;background:var(--rojo)}
-.top img{height:76px;margin-bottom:28px;position:relative}
-.top h1{max-width:620px !important;color:#fff;font-size:60px;font-weight:800;letter-spacing:-.035em;line-height:1.05;position:relative;max-width:820px}
+
+/* Encabezado */
+.top{background:var(--morado-osc);padding:56px 72px 130px;position:relative;overflow:hidden;color:#D8CEE8}
+.top .a{width:430px;height:430px;right:-150px;top:-170px;background:var(--amarillo)}
+.top .b{width:130px;height:130px;right:120px;top:170px;background:var(--rojo)}
+.top .c{width:900px;height:300px;left:-200px;bottom:-250px;background:#3A1A63;border-radius:50%}
+.top>*:not(.blob){position:relative}
+.top img{height:66px;margin-bottom:34px}
+.ey{display:inline-block;font-size:19px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--amarillo);margin-bottom:18px}
+.top h1{color:#fff;font-size:62px;font-weight:800;letter-spacing:-.035em;line-height:1.03;max-width:700px}
 .top h1 em{font-style:normal;color:var(--amarillo)}
-.lista{flex:1;padding:24px 76px;display:grid;gap:12px;align-content:center}
-.it{display:flex;align-items:center;gap:28px;font-size:34px;font-weight:600;color:var(--tinta);letter-spacing:-.01em}
-.ft{position:relative;width:150px;height:108px;flex:none;border:2px solid var(--linea);border-radius:20px;background:#fff;overflow:hidden}
-.ft img{width:100%;height:100%;object-fit:contain;padding:6px}
-.base{margin-top:auto;background:var(--rojo);padding:36px 76px;display:flex;align-items:center;justify-content:space-between;gap:40px;position:relative;overflow:hidden}
-.base .c{width:260px;height:260px;left:-90px;bottom:-170px;background:var(--amarillo)}
-.base>div{position:relative}
-.base h2{color:#fff;font-size:50px;font-weight:800;margin-bottom:10px}
-.base p{color:#FFE4E9;font-size:30px;font-weight:500;display:flex;align-items:center;gap:14px}
-.base p svg{width:38px;height:38px}
-.qr{background:#fff;border-radius:24px;padding:16px;width:220px;text-align:center;font-size:19px;font-weight:600;color:var(--tinta);line-height:1.25}
+
+/* Tarjetas */
+.lineas{margin:-92px 56px 40px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 18px 40px rgba(46,19,80,.14);display:flex;flex-direction:column}
+.card .ft{height:172px;position:relative;background:#fff}
+.card .ft img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:18px}
+.card .tx{padding:14px 20px 20px;display:flex;align-items:center;gap:12px;border-top:1px solid var(--linea)}
+.card .bar{width:6px;align-self:stretch;border-radius:6px;flex:none}
+.card b{font-size:23px;line-height:1.15;color:var(--tinta);font-weight:700;letter-spacing:-.01em}
+.cta-card{background:var(--amarillo);border-radius:26px;padding:30px 26px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 18px 40px rgba(46,19,80,.14)}
+.cta-card span{font-size:18px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6B4300}
+.cta-card b{font-size:33px;line-height:1.1;font-weight:800;color:var(--tinta);letter-spacing:-.02em}
+.cta-card p{font-size:20px;color:#4A3200;font-weight:500}
+
+/* Contacto */
+.base{margin-top:auto;background:var(--rojo);padding:46px 72px 52px;display:grid;grid-template-columns:1fr 230px;gap:40px;align-items:center;position:relative;overflow:hidden}
+.base .d{width:300px;height:300px;right:-110px;bottom:-170px;background:var(--amarillo)}
+.base>*:not(.blob){position:relative}
+.base h2{color:#fff;font-size:52px;font-weight:800;margin-bottom:18px;letter-spacing:-.03em}
+.wa-btn{display:inline-flex;align-items:center;gap:16px;background:#fff;color:var(--tinta);border-radius:999px;padding:16px 30px 16px 18px;font-size:34px;font-weight:700;letter-spacing:-.01em}
+.wa-btn i{width:52px;height:52px;border-radius:50%;background:var(--wa);display:grid;place-items:center}
+.wa-btn svg{width:30px;height:30px;color:#fff}
+.mail{margin-top:18px;display:flex;align-items:center;gap:12px;color:#fff;font-size:25px;font-weight:500}
+.mail svg{width:30px;height:30px;flex:none}
+.qr{background:#fff;border-radius:24px;padding:16px 16px 12px;text-align:center;font-size:18px;font-weight:600;color:var(--tinta);line-height:1.25;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.qr img{width:100%;display:block;margin-bottom:6px}
 </style>
 </head>
 <body>
@@ -50,23 +70,27 @@ html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
   <div class="top">
     <span class="blob a"></span><span class="blob b"></span>
     <img src="../assets/img/logo-gonfle-blanco.png" alt="Gonflé">
+    <div><span class="ey">Soluciones para empresas</span></div>
     <h1>Más que productos, <em>experiencias que conectan.</em></h1>
   </div>
-  <div class="lista">
-    <div class="it"><span class="ft"><img src="../assets/img/regalo-libretas.webp" alt=""></span>Regalos corporativos y cajas de Navidad</div>
-    <div class="it"><span class="ft"><img src="../assets/img/catering-kit.webp" alt=""></span>Catering empresarial</div>
-    <div class="it"><span class="ft"><img src="../assets/img/inf-hamburguesa.webp" alt=""></span>Inflables y activaciones de marca</div>
-    <div class="it"><span class="ft"><img src="../assets/img/m-tulas.webp" alt=""></span>Publicidad y merchandising</div>
-    <div class="it"><span class="ft"><img src="../assets/img/bienestar-kit.webp" alt=""></span>Semana de la Salud y Bienestar</div>
+
+  <div class="lineas">
+    <div class="card"><div class="ft"><img src="../assets/img/regalo-libretas.webp" alt=""></div><div class="tx"><span class="bar" style="background:var(--rojo)"></span><b>Regalos corporativos</b></div></div>
+    <div class="card"><div class="ft"><img src="../assets/img/catering-kit.webp" alt=""></div><div class="tx"><span class="bar" style="background:var(--amarillo)"></span><b>Catering empresarial</b></div></div>
+    <div class="card"><div class="ft"><img src="../assets/img/inf-hamburguesa.webp" alt=""></div><div class="tx"><span class="bar" style="background:var(--rojo)"></span><b>Inflables y activaciones</b></div></div>
+    <div class="card"><div class="ft"><img src="../assets/img/m-tulas.webp" alt=""></div><div class="tx"><span class="bar" style="background:var(--amarillo)"></span><b>Publicidad y merchandising</b></div></div>
+    <div class="card"><div class="ft"><img src="../assets/img/bienestar-kit.webp" alt=""></div><div class="tx"><span class="bar" style="background:var(--morado)"></span><b>Semana de la Salud</b></div></div>
+    <div class="cta-card"><span>Todo con tu marca</span><b>Un solo aliado para tu empresa</b><p>Cotiza hoy sin compromiso.</p></div>
   </div>
+
   <div class="base">
-    <span class="blob c"></span>
+    <span class="blob d"></span>
     <div>
       <h2>¡Conversemos!</h2>
-      <p><svg><use href="#i-wa"/></svg>(+57) 312 757 6447</p>
-      <p style="font-size:26px;margin-top:6px">gerencia@gonflegroup.com</p>
+      <div class="wa-btn"><i><svg><use href="#i-wa"/></svg></i>312 757 6447</div>
+      <div class="mail"><svg><use href="#i-correo"/></svg>gerencia@gonflegroup.com</div>
     </div>
-    <div class="qr"><img src="../assets/img/qr.svg" alt="">Ver presentación</div>
+    <div class="qr"><img src="../assets/img/qr.svg" alt="">Conoce más</div>
   </div>
 </div>
 </body>
