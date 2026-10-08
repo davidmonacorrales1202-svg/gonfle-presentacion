@@ -1,7 +1,7 @@
 /* Base compartida: presentación web, PDF e imagen para WhatsApp. Colores y tipografía del manual de marca Gonflé. */
 :root{
-  --rojo:#E51D3F; --rojo-osc:#C0142F;
-  --amarillo:#F6A416; --amarillo-claro:#FFF3DB;
+  --rojo:#EB0045; --rojo-osc:#C4003A;
+  --amarillo:#FEE123; --amarillo-claro:#FFF9D6;
   --morado:#552883; --morado-osc:#2E1350; --morado-claro:#F3EEF9;
   --tinta:#1E1630; --texto:#4A4458; --suave:#7B748A;
   --linea:#E8E3EE; --fondo:#FBFAFC; --wa:#1FAF5A; --wa-osc:#168A46;
