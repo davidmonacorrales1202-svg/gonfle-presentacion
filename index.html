@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="comun.css?v=1">
+<link rel="stylesheet" href="comun.css?v=2">
 <style>
 html{scroll-behavior:smooth}
 body{font-size:16.5px;line-height:1.65;background:#fff}
@@ -76,6 +76,9 @@ h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
 .linea-vis img{width:100%;height:100%;object-fit:contain;padding:22px;background:#fff}
 .linea-vis .ico{width:96px;height:96px;border-radius:28px;background:rgba(255,255,255,.18);color:#fff}
 .linea-vis.c-amarillo .ico{color:#3A2600;background:rgba(255,255,255,.35)}
+.linea-vis.foto img{object-fit:cover;padding:0;position:absolute;inset:0}
+.mosaico{grid-template-columns:1fr 1fr;grid-auto-rows:118px;gap:8px;padding:12px;background:#fff;place-items:stretch;align-content:center}
+.mosaico img{padding:8px;border:1px solid var(--linea);border-radius:14px;width:100%;height:100%;min-height:0;object-fit:contain}
 .linea-txt{padding:30px 34px}
 .linea-txt .num{font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--morado)}
 .linea-txt h3{font-size:1.45rem;margin:6px 0 10px}
@@ -117,10 +120,14 @@ footer img{height:44px;margin:0 auto 12px}
 @media (max-width:900px){
   .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:36px;padding-bottom:56px}
   .collage{order:-1;justify-self:center;max-width:380px}
-  .banda .wrap{grid-template-columns:1fr 1fr;gap:6px}
+  .banda .wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  .banda a{min-width:0;font-size:.84rem;gap:10px}
+  .banda .ico{width:38px;height:38px;border-radius:12px}
   .banda a:last-child{grid-column:span 2}
   .linea{grid-template-columns:1fr}
   .linea-vis{min-height:180px}
+  .linea-vis.foto{min-height:220px}
+  .mosaico{min-height:0;grid-auto-rows:130px}
   .linea-vis img{max-height:220px}
   .razones,.pasos{grid-template-columns:1fr 1fr}
   .cierre{grid-template-columns:1fr;padding:44px 26px}
@@ -137,6 +144,8 @@ footer img{height:44px;margin:0 auto 12px}
   .cierre .btn{width:100%}
   .wa-flot{display:none}
   .linea-vis{min-height:120px}
+  .linea-vis.foto{min-height:210px}
+  .mosaico{min-height:0;grid-auto-rows:120px}
   .linea-vis .ico{width:72px;height:72px;border-radius:22px}
   .cierre::before{width:200px;right:-110px;top:-130px}
 }
@@ -206,7 +215,7 @@ footer img{height:44px;margin:0 auto 12px}
     <div class="cab"><span class="eyebrow">Nuestras líneas de negocio</span><h2>Soluciones integrales para cada necesidad de tu empresa</h2><p>Puedes contratar una sola línea o combinarlas en un mismo proyecto, con un solo aliado.</p></div>
     <div class="lineas">
       <article class="linea" id="regalos">
-        <div class="linea-vis c-rojo"><span class="ico"><svg><use href="#i-regalo"/></svg></span></div>
+        <div class="linea-vis mosaico"><img src="assets/img/regalo-libretas.webp" alt="Libretas ecológicas" loading="lazy"><img src="assets/img/regalo-bolsa.webp" alt="Bolsa de tela y corcho" loading="lazy"><img src="assets/img/regalo-boligrafos.webp" alt="Bolígrafos de bambú" loading="lazy"><img src="assets/img/regalo-paraguas.webp" alt="Paraguas" loading="lazy"></div>
         <div class="linea-txt">
           <span class="num">01</span>
           <h3>Regalos corporativos y cajas de Navidad</h3>
@@ -215,7 +224,7 @@ footer img{height:44px;margin:0 auto 12px}
         </div>
       </article>
       <article class="linea" id="catering">
-        <div class="linea-vis c-amarillo"><span class="ico"><svg><use href="#i-catering"/></svg></span></div>
+        <div class="linea-vis foto"><img src="assets/img/catering.webp" alt="Refrigerios y pastelería para un evento corporativo" loading="lazy"></div>
         <div class="linea-txt">
           <span class="num">02</span>
           <h3>Catering empresarial</h3>
@@ -242,7 +251,7 @@ footer img{height:44px;margin:0 auto 12px}
         </div>
       </article>
       <article class="linea" id="bienestar">
-        <div class="linea-vis c-morado"><span class="ico"><svg><use href="#i-salud"/></svg></span></div>
+        <div class="linea-vis foto"><img src="assets/img/bienestar.webp" alt="Botella deportiva y accesorios de bienestar" loading="lazy"></div>
         <div class="linea-txt">
           <span class="num">05</span>
           <h3>Semana de la Salud y Bienestar</h3>
