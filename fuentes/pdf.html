@@ -14,21 +14,22 @@ body{font-size:10.5pt;line-height:1.5;-webkit-print-color-adjust:exact;print-col
 .blob{position:absolute;border-radius:58% 42% 47% 53%/48% 55% 45% 52%}
 
 /* Página 1 */
-.p1-top{background:var(--morado-osc);color:#D8CEE8;padding:.42in .55in .36in;position:relative;overflow:hidden}
+.p1-top{background:#fff;color:var(--texto);padding:.42in .55in .36in;position:relative;overflow:hidden}
 .p1-top .blob.a{width:2.6in;height:2.6in;right:-.8in;top:-1in;background:var(--amarillo)}
-.p1-top .blob.b{width:1.4in;height:1.4in;right:1.3in;bottom:-.9in;background:var(--rojo)}
+.p1-top .blob.b{width:.9in;height:.9in;right:1.55in;top:.35in;background:var(--rojo)}
 .p1-top img.logo{height:.56in;margin-bottom:.24in}
-.p1-top .ey{font-size:8pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amarillo)}
-.p1-top h1{color:#fff;font-size:25pt;font-weight:800;letter-spacing:-.03em;margin:.08in 0 .12in;max-width:5.3in;position:relative}
-.p1-top h1 em{font-style:normal;color:var(--amarillo)}
+.p1-top .ey{display:inline-block;font-size:7.5pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--rojo);padding:.04in .14in;border-radius:999px;position:relative}
+.p1-top h1{color:var(--tinta);font-size:25pt;font-weight:800;letter-spacing:-.03em;margin:.08in 0 .12in;max-width:5.3in;position:relative}
+.p1-top h1 em{font-style:normal;color:var(--rojo)}
+.p1-top h1 u{text-decoration:none;color:var(--amarillo)}
 .p1-top p{max-width:5in;font-size:10.5pt;position:relative}
 .cuerpo{padding:.3in .55in 0}
 .tit{font-size:8pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo);margin-bottom:.08in}
 h2{font-size:16pt;margin-bottom:.16in}
 .lineas{display:grid;grid-template-columns:1fr 1fr;gap:.13in}
 .ln{display:grid;grid-template-columns:1.1in 1fr;border:1px solid var(--linea);border-radius:14px;overflow:hidden;min-height:1.3in}
-.ln-foto{position:relative;background:#fff;border-right:1px solid var(--linea)}
-.ln-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:.07in}
+.ln-foto{position:relative;background:#fff}
+.ln-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ln-foto.cubre img{object-fit:cover;padding:0}
 .ico-mini{position:absolute;left:.07in;top:.07in;width:.3in;height:.3in;border-radius:8px;display:grid;place-items:center}
 .ico-mini svg{width:60%;height:60%}
@@ -38,7 +39,7 @@ h2{font-size:16pt;margin-bottom:.16in}
 .ln .puntos li{margin-bottom:1px}
 .ln.ancha{grid-column:span 2;grid-template-columns:1.6in 1fr;min-height:1.05in}
 .ln.ancha .puntos{display:grid;grid-template-columns:1fr 1fr;gap:0 .3in}
-.cta{margin-top:.2in;display:flex;align-items:center;justify-content:space-between;gap:.2in;background:var(--morado-osc);border-radius:14px;padding:.16in .22in;color:#D8CEE8}
+.cta{margin-top:.2in;display:flex;align-items:center;justify-content:space-between;gap:.2in;background:var(--rojo);border-radius:14px;padding:.16in .22in;color:#FFE4E9}
 .cta b{color:#fff;font-size:11pt;display:block}
 .cta span{font-size:9pt}
 .btn-wa{display:inline-flex;align-items:center;gap:.08in;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;font-size:10pt;padding:.1in .2in;border-radius:999px;white-space:nowrap}
@@ -75,6 +76,8 @@ h2{font-size:16pt;margin-bottom:.16in}
 .fotos div{display:block;position:relative}
 .fotos .foto img{object-fit:cover;padding:0}
 .fotos .cap span{position:absolute;left:.07in;bottom:.07in;background:rgba(30,22,48,.82);color:#fff;font-size:7.5pt;font-weight:600;padding:.03in .09in;border-radius:999px}
+.banner{height:1.2in;border-radius:16px;overflow:hidden;margin:0 0 .2in}
+.banner img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
 </style>
 </head>
 <body>
@@ -100,20 +103,20 @@ h2{font-size:16pt;margin-bottom:.16in}
 <section class="pag">
   <div class="p1-top">
     <span class="blob a"></span><span class="blob b"></span>
-    <img class="logo" src="../assets/img/logo-gonfle-blanco.png" alt="Gonflé">
+    <img class="logo" src="../assets/img/logo-gonfle.png" alt="Gonflé">
     <div class="ey">Presentación comercial</div>
-    <h1>Más que productos, <em>experiencias que conectan.</em></h1>
+    <h1>Más que productos, <em>experiencias</em> <u>que conectan.</u></h1>
     <p>En Gonflé somos tu aliado estratégico en la creación de experiencias, productos y servicios que hacen visible tu marca, fortalecen tus equipos y generan un impacto positivo en tus clientes.</p>
   </div>
   <div class="cuerpo">
     <div class="tit">Nuestras líneas de negocio</div>
     <h2>Soluciones integrales para cada necesidad de tu empresa</h2>
     <div class="lineas">
-      <div class="ln"><div class="ln-foto"><img src="../assets/img/regalo-libretas.webp" alt=""><span class="ico-mini c-rojo"><svg><use href="#i-regalo"/></svg></span></div><div class="ln-txt"><h3>Regalos corporativos y cajas de Navidad</h3><ul class="puntos"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul></div></div>
-      <div class="ln"><div class="ln-foto"><img src="../assets/img/catering-kit.webp" alt=""><span class="ico-mini c-amarillo"><svg><use href="#i-catering"/></svg></span></div><div class="ln-txt"><h3>Catering empresarial</h3><ul class="puntos"><li>Desayunos y brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos y eventos corporativos</li></ul></div></div>
-      <div class="ln"><div class="ln-foto"><img src="../assets/img/inf-hamburguesa.webp" alt=""><span class="ico-mini c-rojo"><svg><use href="#i-inflable"/></svg></span></div><div class="ln-txt"><h3>Inflables y activaciones de marca</h3><ul class="puntos"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul></div></div>
-      <div class="ln"><div class="ln-foto"><img src="../assets/img/m-tulas.webp" alt=""><span class="ico-mini c-amarillo"><svg><use href="#i-megafono"/></svg></span></div><div class="ln-txt"><h3>Publicidad y merchandising</h3><ul class="puntos"><li>Material POP y promocionales</li><li>Textiles personalizados</li><li>Vasos, copas y caramañolas</li><li>Empaques e impresos</li></ul></div></div>
-      <div class="ln ancha"><div class="ln-foto"><img src="../assets/img/bienestar-kit.webp" alt=""><span class="ico-mini c-morado"><svg><use href="#i-salud"/></svg></span></div><div class="ln-txt"><h3>Semana de la Salud y Bienestar</h3><ul class="puntos"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul></div></div>
+      <div class="ln"><div class="ln-foto"><img src="../assets/img/foto-regalos.webp" alt=""><span class="ico-mini c-rojo"><svg><use href="#i-regalo"/></svg></span></div><div class="ln-txt"><h3>Regalos corporativos y cajas de Navidad</h3><ul class="puntos"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul></div></div>
+      <div class="ln"><div class="ln-foto"><img src="../assets/img/foto-catering.webp" alt=""><span class="ico-mini c-amarillo"><svg><use href="#i-catering"/></svg></span></div><div class="ln-txt"><h3>Catering empresarial</h3><ul class="puntos"><li>Desayunos y brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos y eventos corporativos</li></ul></div></div>
+      <div class="ln"><div class="ln-foto"><img src="../assets/img/foto-inflables.webp" alt=""><span class="ico-mini c-rojo"><svg><use href="#i-inflable"/></svg></span></div><div class="ln-txt"><h3>Inflables y activaciones de marca</h3><ul class="puntos"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul></div></div>
+      <div class="ln"><div class="ln-foto"><img src="../assets/img/foto-merch.webp" alt=""><span class="ico-mini c-amarillo"><svg><use href="#i-megafono"/></svg></span></div><div class="ln-txt"><h3>Publicidad y merchandising</h3><ul class="puntos"><li>Material POP y promocionales</li><li>Textiles personalizados</li><li>Vasos, copas y caramañolas</li><li>Empaques e impresos</li></ul></div></div>
+      <div class="ln ancha"><div class="ln-foto"><img src="../assets/img/foto-salud.webp" alt=""><span class="ico-mini c-rojo"><svg><use href="#i-salud"/></svg></span></div><div class="ln-txt"><h3>Semana de la Salud y Bienestar</h3><ul class="puntos"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul></div></div>
     </div>
     <div class="cta"><div><b>¿Te interesa alguna de nuestras líneas?</b><span>Escríbenos y agendamos una cita para conocer tu necesidad.</span></div><a class="btn-wa" href="https://wa.me/573127576447?text=Hola%20Gonfl%C3%A9%2C%20vi%20su%20presentaci%C3%B3n%20comercial%20y%20quiero%20agendar%20una%20cita."><svg><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a></div>
     
@@ -128,7 +131,7 @@ h2{font-size:16pt;margin-bottom:.16in}
     <div class="razones">
       <div class="rz"><span class="ico c-amarillo"><svg><use href="#i-estrella"/></svg></span><div><h3>Experiencia y compromiso</h3><p>Acompañamos cada proyecto de principio a fin.</p></div></div>
       <div class="rz"><span class="ico c-rojo"><svg><use href="#i-medida"/></svg></span><div><h3>Producción a la medida</h3><p>Todo se produce y personaliza con la identidad de tu marca.</p></div></div>
-      <div class="rz"><span class="ico c-morado"><svg><use href="#i-aliado"/></svg></span><div><h3>Un solo aliado</h3><p>Múltiples soluciones coordinadas en un mismo proveedor.</p></div></div>
+      <div class="rz"><span class="ico c-rojo"><svg><use href="#i-aliado"/></svg></span><div><h3>Un solo aliado</h3><p>Múltiples soluciones coordinadas en un mismo proveedor.</p></div></div>
       <div class="rz"><span class="ico c-amarillo"><svg><use href="#i-check"/></svg></span><div><h3>Calidad y cumplimiento</h3><p>Atención cercana y entregas en la fecha acordada.</p></div></div>
     </div>
 
@@ -141,13 +144,7 @@ h2{font-size:16pt;margin-bottom:.16in}
       <div class="ps"><h3>Producimos y entregamos</h3><p>Coordinamos producción y entrega en la fecha acordada.</p></div>
     </div>
 
-    <div class="tit">Algunos de nuestros productos</div>
-    <div class="fotos" style="margin:0 0 .2in">
-      <div><img src="../assets/img/inf-pato.webp" alt=""></div>
-      <div><img src="../assets/img/m-gorra-neville.webp" alt=""></div>
-      <div><img src="../assets/img/m-bolsa-cork.webp" alt=""></div>
-      <div><img src="../assets/img/m-paraguas.webp" alt=""></div>
-    </div>
+    <div class="banner"><img src="../assets/img/foto-evento.webp" alt=""></div>
 
     <div class="cierre">
       <span class="blob"></span>
