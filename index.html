@@ -18,143 +18,125 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="comun.css?v=3l">
+<link rel="stylesheet" href="comun.css?v=5">
 <style>
 html{scroll-behavior:smooth}
 body{font-size:16.5px;line-height:1.65;background:#fff}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-:focus-visible{outline:3px solid var(--amarillo);outline-offset:3px;border-radius:6px}
-.eyebrow{display:block;font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo);margin-bottom:12px}
-h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
-.sec{padding:84px 0}
-.gris{background:var(--fondo)}
-.cab{max-width:640px;margin-bottom:40px}
-.cab p{margin-top:14px;font-size:1.06rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s;white-space:nowrap}
-.btn:hover{transform:translateY(-1px)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--amarillo);outline-offset:3px}
+h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.03em}
+.sec{padding:88px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:8px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background .15s,color .15s;white-space:nowrap}
 .btn svg{width:20px;height:20px;flex:none}
-.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 22px rgba(31,175,90,.3)}
+.btn-wa{background:var(--wa);color:#fff}
 .btn-wa:hover{background:var(--wa-osc)}
-.btn-linea{border-color:var(--linea);color:var(--tinta);background:#fff}
-.btn-blanco{background:#fff;color:var(--tinta)}
-.btn-fantasma{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-linea{border-color:var(--tinta);color:var(--tinta);background:transparent}
+.btn-linea:hover{background:var(--tinta);color:#fff}
+.btn-blanco{background:#fff;color:var(--rojo)}
+.btn-blanco:hover{background:var(--amarillo);color:var(--tinta)}
+.btn-fantasma{border-color:#fff;color:#fff}
+.btn-fantasma:hover{background:#fff;color:var(--rojo)}
+.enlace{display:inline-flex;align-items:center;gap:8px;color:var(--rojo);font-weight:600;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px}
+.enlace:hover{color:var(--tinta)}
+.enlace svg{width:18px;height:18px}
 
 /* Encabezado */
-.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.top img{height:38px}
-.top .btn{padding:10px 18px;font-size:.9rem}
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--linea)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.top img{height:40px}
+.top .btn{padding:10px 18px;font-size:.92rem}
 
 /* Hero */
-.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#fff,var(--fondo))}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:68px;padding-bottom:84px}
-.hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:800;letter-spacing:-.035em}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-top:72px;padding-bottom:88px}
+.hero h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;letter-spacing:-.04em;line-height:1.02}
 .hero h1 em{font-style:normal;color:var(--rojo)}
-.hero .lead{font-size:1.12rem;margin:22px 0 30px;max-width:520px}
+.hero h1 u{text-decoration:none;color:var(--amarillo)}
+.hero .lead{font-size:1.12rem;margin:24px 0 32px;max-width:500px}
 .acc{display:flex;flex-wrap:wrap;gap:12px}
-.collage{position:relative;aspect-ratio:1/1;max-width:500px;width:100%;justify-self:end}
-.collage::before{content:"";position:absolute;inset:6% 4% 4% 8%;background:var(--amarillo);border-radius:58% 42% 47% 53%/48% 55% 45% 52%}
-.collage::after{content:"";position:absolute;width:30%;aspect-ratio:1;left:-3%;bottom:0;background:var(--rojo);border-radius:54% 46% 40% 60%/46% 58% 42% 54%}
-.hero-foto{position:absolute;inset:8% 2% 8% 6%;z-index:1;border-radius:32px;overflow:hidden;box-shadow:0 24px 50px rgba(30,22,48,.22)}
-.hero-foto img{width:100%;height:100%;object-fit:cover}
-.pieza{position:absolute;z-index:1;background:#fff;border-radius:22px;box-shadow:0 18px 40px rgba(46,19,80,.16);display:grid;place-items:center;overflow:hidden}
-.pieza img{width:100%;height:100%;object-fit:contain;padding:10%}
-.p1{width:52%;aspect-ratio:1;left:8%;top:6%}
-.p2{width:38%;aspect-ratio:1;right:2%;top:20%}
-.p3{width:36%;aspect-ratio:1;left:24%;bottom:6%}
-.p4{width:30%;aspect-ratio:1;right:10%;bottom:12%}
+.hero-foto{position:relative}
+.hero-foto::before{content:"";position:absolute;inset:24px -24px -24px 24px;background:var(--amarillo)}
+.hero-foto img{position:relative;width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:4px}
 
-/* Banda de líneas */
-.banda{background:#fff;color:var(--tinta);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
-.banda .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding-top:26px;padding-bottom:26px}
-.banda a{display:flex;align-items:center;gap:12px;color:var(--tinta);text-decoration:none;font-size:.9rem;font-weight:500;line-height:1.3;padding:6px;border-radius:12px}
-.banda a:hover{background:var(--amarillo-claro)}
-.banda .ico{width:44px;height:44px;border-radius:14px}
+/* Franja de líneas */
+.franja{background:var(--rojo);color:#fff}
+.franja .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 0;padding-top:18px;padding-bottom:18px}
+.franja a{color:#fff;text-decoration:none;font-weight:600;font-size:.98rem;padding:4px 0}
+.franja a:hover{color:var(--amarillo)}
+.franja span{opacity:.5}
 
 /* Líneas */
-.lineas{display:grid;gap:22px}
-.linea{display:grid;grid-template-columns:360px 1fr;gap:8px;align-items:center;scroll-margin-top:90px}
-.linea:nth-child(even){grid-template-columns:1fr 360px}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
+.intro p{font-size:1.08rem;max-width:460px}
+.linea{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;padding:44px 0;border-top:1px solid var(--linea);scroll-margin-top:80px}
+.linea:last-child{border-bottom:1px solid var(--linea)}
 .linea:nth-child(even) .linea-vis{order:2}
-.linea-vis{position:relative;min-height:250px;border-radius:26px;overflow:hidden;box-shadow:0 16px 36px rgba(30,22,48,.14)}
-.linea-vis img{width:100%;height:100%;object-fit:contain;padding:22px;background:#fff}
-.linea-vis .ico{width:96px;height:96px;border-radius:28px;background:rgba(255,255,255,.18);color:#fff}
-.linea-vis.c-amarillo .ico{color:#3A2600;background:rgba(255,255,255,.35)}
-.linea-vis.foto img{object-fit:cover;padding:0;position:absolute;inset:0}
-.mosaico{grid-template-columns:1fr 1fr;grid-auto-rows:118px;gap:8px;padding:12px;background:#fff;place-items:stretch;align-content:center}
-.mosaico img{padding:8px;border:1px solid var(--linea);border-radius:14px;width:100%;height:100%;min-height:0;object-fit:contain}
-.linea-txt{padding:30px 34px}
-.linea-txt .num{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--rojo);padding:4px 12px;border-radius:999px}
-.linea:nth-child(even) .num{background:var(--amarillo);color:var(--tinta)}
-.linea-txt h3{font-size:1.45rem;margin:6px 0 10px}
-.linea-txt p{margin-bottom:16px}
-.linea-txt .puntos{display:grid;grid-template-columns:1fr 1fr;gap:2px 24px;font-size:.95rem}
+.linea-vis img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.linea-txt h3{font-size:1.65rem;font-weight:800;letter-spacing:-.025em;margin-bottom:12px}
+.linea-txt p{margin-bottom:18px;font-size:1.04rem}
+.items{margin-bottom:24px;color:var(--tinta);font-size:.96rem;line-height:1.9}
+.items li{display:inline}
+.items li:not(:last-child)::after{content:"·";color:var(--rojo);font-weight:700;margin:0 10px}
 
 /* Por qué */
-.razones{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.razon{background:#fff;border-radius:22px;padding:26px 6px}
-.razon .ico{width:52px;height:52px;margin-bottom:16px}
-.razon h3{font-size:1.04rem;margin-bottom:6px}
-.razon p{font-size:.92rem}
+.porque{background:var(--amarillo);color:#3A2600}
+.porque .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.porque h2{color:var(--tinta)}
+.porque .sub{margin-top:16px;font-size:1.08rem;max-width:380px}
+.razones div{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:20px 0;border-top:1px solid rgba(58,38,0,.25)}
+.razones div:last-child{border-bottom:1px solid rgba(58,38,0,.25)}
+.razones b{color:var(--tinta);font-size:1.08rem;font-weight:700}
 
 /* Proceso */
-.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:p}
-.paso{padding:26px;border-radius:22px;background:#fff;border-top:4px solid var(--amarillo)}
-.paso::before{counter-increment:p;content:"0" counter(p);display:block;font-size:2rem;font-weight:800;color:var(--amarillo);letter-spacing:-.04em;margin-bottom:10px}
-.paso h3{font-size:1.04rem;margin-bottom:6px}
-.paso p{font-size:.92rem}
+.proceso h2{margin-bottom:40px}
+.pasos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--tinta)}
+.pasos li{padding:24px 24px 8px 0}
+.pasos li+li{padding-left:24px;border-left:1px solid var(--linea)}
+.pasos b{display:block;color:var(--tinta);font-size:1.12rem;margin-bottom:8px}
+.pasos b span{color:var(--rojo);margin-right:8px}
+.pasos p{font-size:.95rem}
 
 /* Cierre */
-.cierre{background:var(--rojo);color:#FFE4E9;border-radius:30px;padding:60px 56px;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center;position:relative;overflow:hidden}
-.cierre::before{content:"";position:absolute;width:320px;aspect-ratio:1;right:-80px;top:-150px;background:var(--amarillo);border-radius:46% 54% 60% 40%/52% 44% 56% 48%}
-.cierre>*{position:relative}
-.cierre h2{color:#fff}
-.cierre p{margin:14px 0 28px;font-size:1.06rem;max-width:520px}
-.contacto{background:#fff;border-radius:22px;padding:26px;color:var(--texto);display:grid;gap:14px;font-size:.95rem}
-.contacto a{color:var(--tinta);text-decoration:none;font-weight:500}
-.contacto a:hover{color:var(--rojo)}
-.contacto div{display:flex;gap:12px;align-items:center}
-.contacto svg{width:20px;height:20px;color:var(--rojo);flex:none}
+.cierre{background:var(--rojo);color:#FFE4E9}
+.cierre .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center;padding-top:80px;padding-bottom:80px}
+.cierre h2{color:#fff;font-size:clamp(2rem,4vw,3rem)}
+.cierre p{margin:14px 0 30px;font-size:1.1rem;max-width:500px}
+.contacto{display:grid;gap:0;font-size:1rem;color:#fff}
+.contacto a,.contacto span{color:#fff;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.3);display:block}
+.contacto a:first-child,.contacto span:first-child{border-top:1px solid rgba(255,255,255,.3)}
+.contacto a:hover{color:var(--amarillo)}
 
-footer{padding:40px 0 48px;text-align:center;font-size:.84rem;color:var(--suave)}
-footer img{height:44px;margin:0 auto 12px}
+footer{padding:36px 0;font-size:.86rem;color:var(--suave)}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer img{height:38px}
 
-.wa-flot{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(31,175,90,.45)}
+.wa-flot{position:fixed;right:20px;bottom:20px;z-index:30;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 6px 16px rgba(0,0,0,.2)}
 .wa-flot svg{width:30px;height:30px}
 
 @media (max-width:900px){
-  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:36px;padding-bottom:56px}
-  .collage{order:-1;justify-self:center;max-width:380px}
-  .banda .wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
-  .banda a{min-width:0;font-size:.84rem;gap:10px}
-  .banda .ico{width:38px;height:38px;border-radius:12px}
-  .banda a:last-child{grid-column:span 2}
-  .linea{grid-template-columns:1fr}
-  .linea,.linea:nth-child(even){grid-template-columns:1fr}
+  .hero .wrap{grid-template-columns:1fr;gap:48px;padding-top:40px;padding-bottom:72px}
+  .hero-foto{margin-right:24px}
+  .franja .wrap{justify-content:flex-start;gap:2px 18px;padding-top:14px;padding-bottom:14px}
+  .franja a{font-size:.88rem}
+  .franja span{display:none}
+  .intro{grid-template-columns:1fr;gap:16px;margin-bottom:32px}
+  .linea{grid-template-columns:1fr;gap:24px;padding:36px 0}
   .linea:nth-child(even) .linea-vis{order:0}
-  .linea-vis{min-height:180px}
-  .linea-vis.foto{min-height:220px}
-  .mosaico{min-height:0;grid-auto-rows:130px}
-  .linea-vis img{max-height:220px}
-  .razones,.pasos{grid-template-columns:1fr 1fr}
-  .cierre{grid-template-columns:1fr;padding:44px 26px}
-  .sec{padding:60px 0}
+  .porque .wrap{grid-template-columns:1fr;gap:32px}
+  .razones div{grid-template-columns:1fr;gap:4px}
+  .pasos{grid-template-columns:1fr 1fr}
+  .pasos li:nth-child(3){padding-left:0;border-left:0}
+  .cierre .wrap{grid-template-columns:1fr;gap:40px;padding-top:64px;padding-bottom:64px}
+  .sec{padding:64px 0}
 }
 @media (max-width:560px){
-  .wrap{padding:0 18px}
+  .wrap{padding:0 20px}
   .top .btn span{display:none}
   .top .btn{padding:10px 14px}
-  .linea-txt{padding:24px 22px}
-  .linea-txt .puntos{grid-template-columns:1fr}
-  .razones,.pasos{grid-template-columns:1fr}
-  .acc .btn{width:100%}
-  .cierre .btn{width:100%}
+  .acc .btn,.cierre .btn{width:100%}
+  .pasos{grid-template-columns:1fr}
+  .pasos li,.pasos li+li{padding:20px 0 4px;border-left:0}
+  .pasos li+li{border-top:1px solid var(--linea)}
   .wa-flot{display:none}
-  .linea-vis{min-height:120px}
-  .linea-vis.foto{min-height:210px}
-  .mosaico{min-height:0;grid-auto-rows:120px}
-  .linea-vis .ico{width:72px;height:72px;border-radius:22px}
-  .cierre::before{width:200px;right:-110px;top:-130px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
@@ -190,130 +172,135 @@ footer img{height:44px;margin:0 auto 12px}
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Presentación comercial · Medellín</span>
-      <h1>Más que productos, <em>experiencias que conectan.</em></h1>
+      <h1>Más que productos, <em>experiencias</em> <u>que conectan.</u></h1>
       <p class="lead">En Gonflé somos tu aliado estratégico en la creación de experiencias, productos y servicios que hacen visible tu marca, fortalecen tus equipos y generan un impacto positivo en tus clientes.</p>
       <div class="acc">
         <a class="btn btn-wa" data-wa="cita" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar una cita</a>
         <a class="btn btn-linea" href="#lineas">Ver líneas de negocio</a>
       </div>
     </div>
-    <div class="collage"><div class="hero-foto"><img src="assets/img/foto-evento.webp" alt="Evento corporativo con arco inflable, regalos y refrigerios"></div></div>
+    <div class="hero-foto"><img src="assets/img/foto-evento.webp" alt="Evento corporativo con arco inflable, regalos y refrigerios"></div>
   </div>
 </section>
 
-<nav class="banda" aria-label="Líneas de negocio">
+<nav class="franja" aria-label="Líneas de negocio">
   <div class="wrap">
-    <a href="#regalos"><span class="ico c-rojo"><svg><use href="#i-regalo"/></svg></span>Regalos corporativos</a>
-    <a href="#catering"><span class="ico c-amarillo"><svg><use href="#i-catering"/></svg></span>Catering empresarial</a>
-    <a href="#inflables"><span class="ico c-rojo"><svg><use href="#i-inflable"/></svg></span>Inflables y activaciones</a>
-    <a href="#publicidad"><span class="ico c-amarillo"><svg><use href="#i-megafono"/></svg></span>Publicidad y merchandising</a>
-    <a href="#bienestar"><span class="ico c-rojo"><svg><use href="#i-salud"/></svg></span>Semana de la Salud</a>
+    <a href="#regalos">Regalos corporativos</a><span>/</span>
+    <a href="#catering">Catering empresarial</a><span>/</span>
+    <a href="#inflables">Inflables y activaciones</a><span>/</span>
+    <a href="#publicidad">Publicidad y merchandising</a><span>/</span>
+    <a href="#bienestar">Semana de la Salud</a>
   </div>
 </nav>
 
-<section class="sec gris" id="lineas">
+<section class="sec" id="lineas">
   <div class="wrap">
-    <div class="cab"><span class="eyebrow">Nuestras líneas de negocio</span><h2>Soluciones integrales para cada necesidad de tu empresa</h2><p>Puedes contratar una sola línea o combinarlas en un mismo proyecto, con un solo aliado.</p></div>
+    <div class="intro">
+      <h2>Soluciones integrales para cada necesidad de tu empresa</h2>
+      <p>Puedes contratar una sola línea o combinarlas en un mismo proyecto, con un solo aliado.</p>
+    </div>
     <div class="lineas">
       <article class="linea" id="regalos">
-        <div class="linea-vis foto"><img src="assets/img/foto-regalos.webp" alt="Caja de regalo corporativo de Navidad" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-regalos.webp" alt="Caja de regalo corporativo de Navidad con el logo de Gonflé" loading="lazy"></div>
         <div class="linea-txt">
-          <span class="num">01</span>
           <h3>Regalos corporativos y cajas de Navidad</h3>
           <p>Detalles con la identidad de tu marca para reconocer a quienes hacen parte de tu empresa.</p>
-          <ul class="puntos"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul>
+          <ul class="items"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul>
+          <a class="enlace" data-wa="regalos" href="#" target="_blank" rel="noopener">Cotizar regalos<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
       <article class="linea" id="catering">
-        <div class="linea-vis foto"><img src="assets/img/foto-catering.webp" alt="Catering empresarial para una reunión" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-catering.webp" alt="Catering empresarial para una reunión" loading="lazy"></div>
         <div class="linea-txt">
-          <span class="num">02</span>
           <h3>Catering empresarial</h3>
           <p>Alimentación para reuniones, capacitaciones y eventos corporativos.</p>
-          <ul class="puntos"><li>Desayunos</li><li>Brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos</li><li>Eventos corporativos</li></ul>
+          <ul class="items"><li>Desayunos</li><li>Brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos</li><li>Eventos corporativos</li></ul>
+          <a class="enlace" data-wa="catering" href="#" target="_blank" rel="noopener">Cotizar catering<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
       <article class="linea" id="inflables">
-        <div class="linea-vis foto"><img src="assets/img/foto-inflables.webp" alt="Activación de marca con arco inflable" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-inflables.webp" alt="Activación de marca con arco inflable" loading="lazy"></div>
         <div class="linea-txt">
-          <span class="num">03</span>
           <h3>Inflables y activaciones de marca</h3>
           <p>Inflables publicitarios a la medida, a motor o sellados, para que tu marca se vea desde lejos.</p>
-          <ul class="puntos"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul>
+          <ul class="items"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul>
+          <a class="enlace" data-wa="inflables" href="#" target="_blank" rel="noopener">Cotizar inflables<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
       <article class="linea" id="publicidad">
-        <div class="linea-vis foto"><img src="assets/img/foto-merch.webp" alt="Kit de merchandising corporativo" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-merch.webp" alt="Kit de merchandising con el logo de Gonflé" loading="lazy"></div>
         <div class="linea-txt">
-          <span class="num">04</span>
           <h3>Publicidad y merchandising</h3>
           <p>Productos marcados con tu logo para el punto de venta, tus campañas y tus equipos.</p>
-          <ul class="puntos"><li>Material POP</li><li>Productos promocionales</li><li>Textiles personalizados</li><li>Vasos, copas y caramañolas</li><li>Empaques e impresos</li></ul>
+          <ul class="items"><li>Material POP</li><li>Productos promocionales</li><li>Textiles personalizados</li><li>Vasos, copas y caramañolas</li><li>Empaques e impresos</li></ul>
+          <a class="enlace" data-wa="publicidad" href="#" target="_blank" rel="noopener">Cotizar merchandising<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
       <article class="linea" id="bienestar">
-        <div class="linea-vis foto"><img src="assets/img/foto-salud.webp" alt="Kit de bienestar para la Semana de la Salud" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-salud.webp" alt="Kit de bienestar para la Semana de la Salud" loading="lazy"></div>
         <div class="linea-txt">
-          <span class="num">05</span>
           <h3>Semana de la Salud y Bienestar</h3>
           <p>Jornadas para el bienestar de tus colaboradores, con alimentación y material de marca.</p>
-          <ul class="puntos"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul>
+          <ul class="items"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul>
+          <a class="enlace" data-wa="bienestar" href="#" target="_blank" rel="noopener">Planear la Semana de la Salud<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="sec">
+<section class="sec porque">
   <div class="wrap">
-    <div class="cab"><span class="eyebrow">¿Por qué elegirnos?</span><h2>Sentimos tu marca como si fuera nuestra</h2></div>
+    <div>
+      <h2>Sentimos tu marca como si fuera nuestra</h2>
+      <p class="sub">Por eso cada proyecto lo acompaña una persona de nuestro equipo, desde la primera conversación hasta la entrega.</p>
+    </div>
     <div class="razones">
-      <div class="razon"><span class="ico c-amarillo"><svg><use href="#i-estrella"/></svg></span><h3>Experiencia y compromiso</h3><p>Acompañamos cada proyecto de principio a fin.</p></div>
-      <div class="razon"><span class="ico c-rojo"><svg><use href="#i-medida"/></svg></span><h3>Producción a la medida</h3><p>Todo se produce y personaliza con la identidad de tu marca.</p></div>
-      <div class="razon"><span class="ico c-rojo"><svg><use href="#i-aliado"/></svg></span><h3>Un solo aliado</h3><p>Múltiples soluciones coordinadas en un mismo proveedor.</p></div>
-      <div class="razon"><span class="ico c-amarillo"><svg><use href="#i-check"/></svg></span><h3>Calidad y cumplimiento</h3><p>Atención cercana y entregas en la fecha acordada.</p></div>
+      <div><b>Experiencia y compromiso</b><span>Acompañamos cada proyecto de principio a fin.</span></div>
+      <div><b>Producción a la medida</b><span>Todo se produce y personaliza con la identidad de tu marca.</span></div>
+      <div><b>Un solo aliado</b><span>Regalos, alimentación, inflables y publicidad coordinados por un mismo proveedor.</span></div>
+      <div><b>Calidad y cumplimiento</b><span>Atención cercana y entregas en la fecha acordada.</span></div>
     </div>
   </div>
 </section>
 
-<section class="sec gris">
+<section class="sec proceso">
   <div class="wrap">
-    <div class="cab"><span class="eyebrow">Cómo trabajamos</span><h2>De la idea a la entrega</h2></div>
-    <div class="pasos">
-      <div class="paso"><h3>Conversamos</h3><p>Nos cuentas qué necesitas, para cuántas personas y para qué fecha.</p></div>
-      <div class="paso"><h3>Proponemos</h3><p>Te enviamos una propuesta a la medida de tu presupuesto.</p></div>
-      <div class="paso"><h3>Aprobamos el diseño</h3><p>Validas el arte y los detalles antes de producir.</p></div>
-      <div class="paso"><h3>Producimos y entregamos</h3><p>Coordinamos la producción y la entrega en la fecha acordada.</p></div>
-    </div>
+    <h2>De la idea a la entrega</h2>
+    <ol class="pasos">
+      <li><b><span>1</span>Conversamos</b><p>Nos cuentas qué necesitas, para cuántas personas y para qué fecha.</p></li>
+      <li><b><span>2</span>Proponemos</b><p>Te enviamos una propuesta a la medida de tu presupuesto.</p></li>
+      <li><b><span>3</span>Aprobamos el diseño</b><p>Validas el arte y los detalles antes de producir.</p></li>
+      <li><b><span>4</span>Producimos y entregamos</b><p>Coordinamos la producción y la entrega en la fecha acordada.</p></li>
+    </ol>
   </div>
 </section>
 
-<section class="sec">
+<section class="cierre" id="contacto">
   <div class="wrap">
-    <div class="cierre" id="contacto">
-      <div>
-        <h2>¡Conversemos!</h2>
-        <p>Cuéntanos qué necesitas y juntos creamos la mejor experiencia para tu empresa. Agenda una cita y te contactamos.</p>
-        <div class="acc">
-          <a class="btn btn-blanco" data-wa="cita" href="#" target="_blank" rel="noopener"><svg><use href="#i-calendario"/></svg>Agendar una cita</a>
-          <a class="btn btn-fantasma" data-wa="necesidad" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Cuéntanos qué necesitas</a>
-        </div>
+    <div>
+      <h2>¡Conversemos!</h2>
+      <p>Cuéntanos qué necesitas y juntos creamos la mejor experiencia para tu empresa.</p>
+      <div class="acc">
+        <a class="btn btn-blanco" data-wa="cita" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar una cita</a>
+        <a class="btn btn-fantasma" data-wa="necesidad" href="#" target="_blank" rel="noopener">Cuéntanos qué necesitas</a>
       </div>
-      <div class="contacto">
-        <div><svg><use href="#i-tel"/></svg><a data-wa="cita" href="#" target="_blank" rel="noopener">(+57) 312 757 6447</a></div>
-        <div><svg><use href="#i-correo"/></svg><a href="mailto:gerencia@gonflegroup.com?subject=Solicitud%20de%20cita%20-%20Gonfl%C3%A9">gerencia@gonflegroup.com</a></div>
-        <div><svg><use href="#i-ubicacion"/></svg><span>Medellín, Antioquia</span></div>
-        <div><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/gonfleoficial/" target="_blank" rel="noopener">@gonfleoficial</a></div>
-      </div>
+    </div>
+    <div class="contacto">
+      <a data-wa="cita" href="#" target="_blank" rel="noopener">(+57) 312 757 6447</a>
+      <a href="mailto:gerencia@gonflegroup.com?subject=Solicitud%20de%20cita%20-%20Gonfl%C3%A9">gerencia@gonflegroup.com</a>
+      <a href="https://www.instagram.com/gonfleoficial/" target="_blank" rel="noopener">@gonfleoficial</a>
+      <span>Medellín, Antioquia</span>
     </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <img src="assets/img/logo-gonfle.png" alt="Gonflé. Sentimos tu marca">
-  <p>Gonflé S.A.S. · Medellín, Colombia</p>
+  <div class="wrap">
+    <img src="assets/img/logo-gonfle.png" alt="Gonflé. Sentimos tu marca">
+    <span>Gonflé S.A.S. · Medellín, Colombia</span>
+  </div>
 </footer>
 
 <a class="wa-flot" data-wa="cita" href="#" target="_blank" rel="noopener" aria-label="Agendar una cita por WhatsApp"><svg><use href="#i-wa"/></svg></a>
@@ -324,6 +311,11 @@ const NUMERO = "573127576447";
 const MENSAJES = {
   cita: "Hola Gonflé, vi su presentación comercial y quiero agendar una cita.",
   necesidad: "Hola Gonflé, vi su presentación comercial y quiero contarles lo que necesito.",
+  regalos: "Hola Gonflé, quiero cotizar regalos corporativos para mi empresa.",
+  catering: "Hola Gonflé, quiero cotizar catering empresarial.",
+  inflables: "Hola Gonflé, quiero cotizar inflables o una activación de marca.",
+  publicidad: "Hola Gonflé, quiero cotizar publicidad y merchandising con mi logo.",
+  bienestar: "Hola Gonflé, quiero planear la Semana de la Salud de mi empresa.",
 };
 document.querySelectorAll("[data-wa]").forEach((a) => {
   a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(MENSAJES[a.dataset.wa]);
