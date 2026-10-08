@@ -26,25 +26,38 @@ body{font-size:10.5pt;line-height:1.5;-webkit-print-color-adjust:exact;print-col
 .tit{font-size:8pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo);margin-bottom:.08in}
 h2{font-size:16pt;margin-bottom:.16in}
 .lineas{display:grid;grid-template-columns:1fr 1fr;gap:.13in}
-.ln{display:flex;gap:.14in;border:1px solid var(--linea);border-radius:14px;padding:.13in .15in}
-.ln .ico{width:.5in;height:.5in;border-radius:12px}
-.ln h3{font-size:11pt;margin-bottom:.05in}
-.ln .puntos{font-size:9pt}
+.ln{display:grid;grid-template-columns:1.1in 1fr;border:1px solid var(--linea);border-radius:14px;overflow:hidden;min-height:1.3in}
+.ln-foto{position:relative;background:#fff;border-right:1px solid var(--linea)}
+.ln-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:.07in}
+.ln-foto.cubre img{object-fit:cover;padding:0}
+.ico-mini{position:absolute;left:.07in;top:.07in;width:.3in;height:.3in;border-radius:8px;display:grid;place-items:center}
+.ico-mini svg{width:60%;height:60%}
+.ln-txt{padding:.12in .14in}
+.ln h3{font-size:10.5pt;margin-bottom:.05in}
+.ln .puntos{font-size:8.8pt}
 .ln .puntos li{margin-bottom:1px}
-.ln.ancha{grid-column:span 2;align-items:center}
-.ln.ancha .puntos{display:grid;grid-template-columns:repeat(4,auto);gap:0 .3in}
+.ln.ancha{grid-column:span 2;grid-template-columns:1.6in 1fr;min-height:1.05in}
+.ln.ancha .puntos{display:grid;grid-template-columns:1fr 1fr;gap:0 .3in}
+.cta{margin-top:.2in;display:flex;align-items:center;justify-content:space-between;gap:.2in;background:var(--morado-osc);border-radius:14px;padding:.16in .22in;color:#D8CEE8}
+.cta b{color:#fff;font-size:11pt;display:block}
+.cta span{font-size:9pt}
+.btn-wa{display:inline-flex;align-items:center;gap:.08in;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;font-size:10pt;padding:.1in .2in;border-radius:999px;white-space:nowrap}
+.btn-wa svg{width:.2in;height:.2in}
+.cierre .btn-wa{background:#fff;color:var(--tinta);margin-top:.14in}
+.cierre .btn-wa svg{color:var(--wa)}
+.datos a{color:#fff;text-decoration:none}
 .fotos{display:grid;grid-template-columns:repeat(4,1fr);gap:.12in;margin-top:.16in}
-.fotos div{border:1px solid var(--linea);border-radius:12px;height:1.1in;display:grid;place-items:center;overflow:hidden}
+.fotos div{border:1px solid var(--linea);border-radius:12px;height:.9in;display:grid;place-items:center;overflow:hidden}
 .fotos img{width:100%;height:100%;object-fit:contain;padding:.1in}
 .pie{position:absolute;left:.55in;right:.55in;bottom:.28in;display:flex;justify-content:space-between;font-size:8.5pt;color:var(--suave);border-top:1px solid var(--linea);padding-top:.1in}
 
 /* Página 2 */
-.razones{display:grid;grid-template-columns:1fr 1fr;gap:.12in;margin-bottom:.26in}
+.razones{display:grid;grid-template-columns:1fr 1fr;gap:.12in;margin-bottom:.22in}
 .rz{display:flex;gap:.14in;align-items:flex-start;background:var(--fondo);border-radius:14px;padding:.16in}
 .rz .ico{width:.44in;height:.44in;border-radius:11px}
 .rz h3{font-size:10.5pt;margin-bottom:.03in}
 .rz p{font-size:9pt}
-.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:.12in;margin-bottom:.3in;counter-reset:p}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:.12in;margin-bottom:.22in;counter-reset:p}
 .ps{border:1px solid var(--linea);border-radius:14px;padding:.16in}
 .ps::before{counter-increment:p;content:"0" counter(p);display:block;font-size:18pt;font-weight:800;color:var(--amarillo);line-height:1;margin-bottom:.08in}
 .ps h3{font-size:10pt;margin-bottom:.04in}
@@ -96,19 +109,20 @@ h2{font-size:16pt;margin-bottom:.16in}
     <div class="tit">Nuestras líneas de negocio</div>
     <h2>Soluciones integrales para cada necesidad de tu empresa</h2>
     <div class="lineas">
-      <div class="ln"><span class="ico c-rojo"><svg><use href="#i-regalo"/></svg></span><div><h3>Regalos corporativos y cajas de Navidad</h3><ul class="puntos"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul></div></div>
-      <div class="ln"><span class="ico c-amarillo"><svg><use href="#i-catering"/></svg></span><div><h3>Catering empresarial</h3><ul class="puntos"><li>Desayunos y brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos y eventos corporativos</li></ul></div></div>
-      <div class="ln"><span class="ico c-rojo"><svg><use href="#i-inflable"/></svg></span><div><h3>Inflables y activaciones de marca</h3><ul class="puntos"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul></div></div>
-      <div class="ln"><span class="ico c-amarillo"><svg><use href="#i-megafono"/></svg></span><div><h3>Publicidad y merchandising</h3><ul class="puntos"><li>Material POP y promocionales</li><li>Textiles personalizados</li><li>Vasos, copas y caramañolas</li><li>Empaques e impresos</li></ul></div></div>
-      <div class="ln ancha"><span class="ico c-morado"><svg><use href="#i-salud"/></svg></span><div><h3>Semana de la Salud y Bienestar</h3><ul class="puntos"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul></div></div>
+      <div class="ln"><div class="ln-foto"><img src="../assets/img/regalo-libretas.webp" alt=""><span class="ico-mini c-rojo"><svg><use href="#i-regalo"/></svg></span></div><div class="ln-txt"><h3>Regalos corporativos y cajas de Navidad</h3><ul class="puntos"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul></div></div>
+      <div class="ln"><div class="ln-foto cubre"><img src="../assets/img/catering.webp" alt=""><span class="ico-mini c-amarillo"><svg><use href="#i-catering"/></svg></span></div><div class="ln-txt"><h3>Catering empresarial</h3><ul class="puntos"><li>Desayunos y brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos y eventos corporativos</li></ul></div></div>
+      <div class="ln"><div class="ln-foto"><img src="../assets/img/inf-hamburguesa.webp" alt=""><span class="ico-mini c-rojo"><svg><use href="#i-inflable"/></svg></span></div><div class="ln-txt"><h3>Inflables y activaciones de marca</h3><ul class="puntos"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul></div></div>
+      <div class="ln"><div class="ln-foto"><img src="../assets/img/m-tulas.webp" alt=""><span class="ico-mini c-amarillo"><svg><use href="#i-megafono"/></svg></span></div><div class="ln-txt"><h3>Publicidad y merchandising</h3><ul class="puntos"><li>Material POP y promocionales</li><li>Textiles personalizados</li><li>Vasos, copas y caramañolas</li><li>Empaques e impresos</li></ul></div></div>
+      <div class="ln ancha"><div class="ln-foto cubre"><img src="../assets/img/bienestar.webp" alt=""><span class="ico-mini c-morado"><svg><use href="#i-salud"/></svg></span></div><div class="ln-txt"><h3>Semana de la Salud y Bienestar</h3><ul class="puntos"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul></div></div>
     </div>
+    <div class="cta"><div><b>¿Te interesa alguna de nuestras líneas?</b><span>Escríbenos y agendamos una cita para conocer tu necesidad.</span></div><a class="btn-wa" href="https://wa.me/573127576447?text=Hola%20Gonfl%C3%A9%2C%20vi%20su%20presentaci%C3%B3n%20comercial%20y%20quiero%20agendar%20una%20cita."><svg><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a></div>
     
   </div>
   <div class="pie"><span>Gonflé S.A.S. · Sentimos tu marca</span><span>1 / 2</span></div>
 </section>
 
 <section class="pag">
-  <div class="cuerpo" style="padding-top:.45in">
+  <div class="cuerpo" style="padding-top:.4in">
     <div class="tit">¿Por qué elegirnos?</div>
     <h2>Sentimos tu marca como si fuera nuestra</h2>
     <div class="razones">
@@ -127,12 +141,12 @@ h2{font-size:16pt;margin-bottom:.16in}
       <div class="ps"><h3>Producimos y entregamos</h3><p>Coordinamos producción y entrega en la fecha acordada.</p></div>
     </div>
 
-    <div class="tit">Nuestras soluciones</div>
-    <div class="fotos" style="margin:0 0 .24in">
-      <div class="cap"><img src="../assets/img/regalo-libretas.webp" alt=""><span>Regalos corporativos</span></div>
-      <div class="cap foto"><img src="../assets/img/catering.webp" alt=""><span>Catering empresarial</span></div>
-      <div class="cap"><img src="../assets/img/inf-pato.webp" alt=""><span>Inflables</span></div>
-      <div class="cap foto"><img src="../assets/img/bienestar.webp" alt=""><span>Bienestar</span></div>
+    <div class="tit">Algunos de nuestros productos</div>
+    <div class="fotos" style="margin:0 0 .2in">
+      <div><img src="../assets/img/inf-pato.webp" alt=""></div>
+      <div><img src="../assets/img/m-gorra-neville.webp" alt=""></div>
+      <div><img src="../assets/img/m-bolsa-cork.webp" alt=""></div>
+      <div><img src="../assets/img/m-paraguas.webp" alt=""></div>
     </div>
 
     <div class="cierre">
@@ -141,11 +155,12 @@ h2{font-size:16pt;margin-bottom:.16in}
         <h2>¡Conversemos!</h2>
         <p>Cuéntanos qué necesitas y juntos creamos la mejor experiencia para tu empresa.</p>
         <div class="datos">
-          <div><svg><use href="#i-wa"/></svg>(+57) 312 757 6447</div>
-          <div><svg><use href="#i-correo"/></svg>gerencia@gonflegroup.com</div>
+          <div><svg><use href="#i-wa"/></svg><a href="https://wa.me/573127576447?text=Hola%20Gonfl%C3%A9%2C%20vi%20su%20presentaci%C3%B3n%20comercial%20y%20quiero%20agendar%20una%20cita.">(+57) 312 757 6447</a></div>
+          <div><svg><use href="#i-correo"/></svg><a href="mailto:gerencia@gonflegroup.com">gerencia@gonflegroup.com</a></div>
           <div><svg><use href="#i-ubicacion"/></svg>Medellín, Antioquia</div>
-          <div><svg><use href="#i-insta"/></svg>@gonfleoficial</div>
+          <div><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/gonfleoficial/">@gonfleoficial</a></div>
         </div>
+        <a class="btn-wa" href="https://wa.me/573127576447?text=Hola%20Gonfl%C3%A9%2C%20vi%20su%20presentaci%C3%B3n%20comercial%20y%20quiero%20agendar%20una%20cita."><svg><use href="#i-wa"/></svg>Agendar una cita por WhatsApp</a>
       </div>
       <div class="qr"><img src="../assets/img/qr-whatsapp.svg" alt="Código QR para agendar una cita por WhatsApp">Escanea y agenda una cita</div>
     </div>
