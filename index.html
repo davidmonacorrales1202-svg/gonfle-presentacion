@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gonflé | Presentación comercial</title>
+<meta name="description" content="Gonflé: regalos corporativos, catering empresarial, inflables y activaciones de marca, publicidad y merchandising, y Semana de la Salud. Agenda una cita por WhatsApp.">
+<meta name="theme-color" content="#2E1350">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Gonflé">
+<meta property="og:title" content="Gonflé | Más que productos, experiencias que conectan">
+<meta property="og:description" content="Regalos corporativos, catering, inflables, publicidad y bienestar para empresas. Agenda una cita.">
+<meta property="og:image" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/assets/img/og.png">
+<meta property="og:url" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/logo-gonfle-sin-slogan.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="comun.css?v=1">
+<style>
+html{scroll-behavior:smooth}
+body{font-size:16.5px;line-height:1.65;background:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--amarillo);outline-offset:3px;border-radius:6px}
+.eyebrow{display:block;font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo);margin-bottom:12px}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.sec{padding:84px 0}
+.gris{background:var(--fondo)}
+.cab{max-width:640px;margin-bottom:40px}
+.cab p{margin-top:14px;font-size:1.06rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 22px rgba(31,175,90,.3)}
+.btn-wa:hover{background:var(--wa-osc)}
+.btn-linea{border-color:var(--linea);color:var(--tinta);background:#fff}
+.btn-blanco{background:#fff;color:var(--tinta)}
+.btn-fantasma{border-color:rgba(255,255,255,.45);color:#fff}
+
+/* Encabezado */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.top img{height:38px}
+.top .btn{padding:10px 18px;font-size:.9rem}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#fff,var(--fondo))}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:68px;padding-bottom:84px}
+.hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:800;letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--rojo)}
+.hero .lead{font-size:1.12rem;margin:22px 0 30px;max-width:520px}
+.acc{display:flex;flex-wrap:wrap;gap:12px}
+.collage{position:relative;aspect-ratio:1/1;max-width:500px;width:100%;justify-self:end}
+.collage::before{content:"";position:absolute;inset:6% 4% 4% 8%;background:var(--amarillo);border-radius:58% 42% 47% 53%/48% 55% 45% 52%}
+.collage::after{content:"";position:absolute;width:34%;aspect-ratio:1;left:-2%;bottom:-2%;background:var(--morado);border-radius:54% 46% 40% 60%/46% 58% 42% 54%}
+.pieza{position:absolute;z-index:1;background:#fff;border-radius:22px;box-shadow:0 18px 40px rgba(46,19,80,.16);display:grid;place-items:center;overflow:hidden}
+.pieza img{width:100%;height:100%;object-fit:contain;padding:10%}
+.p1{width:52%;aspect-ratio:1;left:8%;top:6%}
+.p2{width:38%;aspect-ratio:1;right:2%;top:20%}
+.p3{width:36%;aspect-ratio:1;left:24%;bottom:6%}
+.p4{width:30%;aspect-ratio:1;right:10%;bottom:12%}
+
+/* Banda de líneas */
+.banda{background:var(--morado-osc);color:#D8CEE8}
+.banda .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding-top:26px;padding-bottom:26px}
+.banda a{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-size:.9rem;font-weight:500;line-height:1.3;padding:6px;border-radius:12px}
+.banda a:hover{background:rgba(255,255,255,.08)}
+.banda .ico{width:44px;height:44px;border-radius:14px}
+
+/* Líneas */
+.lineas{display:grid;gap:22px}
+.linea{display:grid;grid-template-columns:260px 1fr;background:#fff;border:1px solid var(--linea);border-radius:26px;overflow:hidden;scroll-margin-top:90px}
+.linea-vis{position:relative;display:grid;place-items:center;min-height:220px}
+.linea-vis img{width:100%;height:100%;object-fit:contain;padding:22px;background:#fff}
+.linea-vis .ico{width:96px;height:96px;border-radius:28px;background:rgba(255,255,255,.18);color:#fff}
+.linea-vis.c-amarillo .ico{color:#3A2600;background:rgba(255,255,255,.35)}
+.linea-txt{padding:30px 34px}
+.linea-txt .num{font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--morado)}
+.linea-txt h3{font-size:1.45rem;margin:6px 0 10px}
+.linea-txt p{margin-bottom:16px}
+.linea-txt .puntos{display:grid;grid-template-columns:1fr 1fr;gap:2px 24px;font-size:.95rem}
+
+/* Por qué */
+.razones{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.razon{background:#fff;border:1px solid var(--linea);border-radius:22px;padding:26px}
+.razon .ico{width:52px;height:52px;margin-bottom:16px}
+.razon h3{font-size:1.04rem;margin-bottom:6px}
+.razon p{font-size:.92rem}
+
+/* Proceso */
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:p}
+.paso{padding:26px;border-radius:22px;border:1px solid var(--linea);background:#fff}
+.paso::before{counter-increment:p;content:"0" counter(p);display:block;font-size:2rem;font-weight:800;color:var(--amarillo);letter-spacing:-.04em;margin-bottom:10px}
+.paso h3{font-size:1.04rem;margin-bottom:6px}
+.paso p{font-size:.92rem}
+
+/* Cierre */
+.cierre{background:var(--rojo);color:#FFE4E9;border-radius:30px;padding:60px 56px;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.cierre::before{content:"";position:absolute;width:320px;aspect-ratio:1;right:-80px;top:-150px;background:var(--amarillo);border-radius:46% 54% 60% 40%/52% 44% 56% 48%}
+.cierre>*{position:relative}
+.cierre h2{color:#fff}
+.cierre p{margin:14px 0 28px;font-size:1.06rem;max-width:520px}
+.contacto{background:#fff;border-radius:22px;padding:26px;color:var(--texto);display:grid;gap:14px;font-size:.95rem}
+.contacto a{color:var(--tinta);text-decoration:none;font-weight:500}
+.contacto a:hover{color:var(--rojo)}
+.contacto div{display:flex;gap:12px;align-items:center}
+.contacto svg{width:20px;height:20px;color:var(--rojo);flex:none}
+
+footer{padding:40px 0 48px;text-align:center;font-size:.84rem;color:var(--suave)}
+footer img{height:44px;margin:0 auto 12px}
+
+.wa-flot{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(31,175,90,.45)}
+.wa-flot svg{width:30px;height:30px}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:36px;padding-bottom:56px}
+  .collage{order:-1;justify-self:center;max-width:380px}
+  .banda .wrap{grid-template-columns:1fr 1fr;gap:6px}
+  .banda a:last-child{grid-column:span 2}
+  .linea{grid-template-columns:1fr}
+  .linea-vis{min-height:180px}
+  .linea-vis img{max-height:220px}
+  .razones,.pasos{grid-template-columns:1fr 1fr}
+  .cierre{grid-template-columns:1fr;padding:44px 26px}
+  .sec{padding:60px 0}
+}
+@media (max-width:560px){
+  .wrap{padding:0 18px}
+  .top .btn span{display:none}
+  .top .btn{padding:10px 14px}
+  .linea-txt{padding:24px 22px}
+  .linea-txt .puntos{grid-template-columns:1fr}
+  .razones,.pasos{grid-template-columns:1fr}
+  .acc .btn{width:100%}
+  .cierre .btn{width:100%}
+  .wa-flot{display:none}
+  .linea-vis{min-height:120px}
+  .linea-vis .ico{width:72px;height:72px;border-radius:22px}
+  .cierre::before{width:200px;right:-110px;top:-130px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-regalo" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 9h16v4H4zm1.5 4V20h13v-7M12 9v11M12 9S10.5 4.5 8 5s-1 4 4 4Zm0 0s1.5-4.5 4-4 1 4-4 4Z"/></symbol>
+  <symbol id="i-catering" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3 17h18M5 17a7 7 0 0 1 14 0M12 8V6.5M10.5 6.5h3M2.5 20h19"/></symbol>
+  <symbol id="i-inflable" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3 20V12a9 9 0 0 1 18 0v8M7 20v-8a5 5 0 0 1 10 0v8M2 20h5m10 0h5"/></symbol>
+  <symbol id="i-megafono" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 10v4h3l8 4V6l-8 4zm15-1a4 4 0 0 1 0 6M8 14v4a1.5 1.5 0 0 0 3 0v-2.5"/></symbol>
+  <symbol id="i-salud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.5h2.2l1.3-2.3 2 4.3 1.3-2h2.2"/></symbol>
+  <symbol id="i-estrella" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+  <symbol id="i-medida" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 16 16 4l4 4L8 20H4zM13 7l4 4M10 10l2 2M7 13l2 2"/></symbol>
+  <symbol id="i-aliado" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-6 9a6 6 0 0 1 12 0M16 4.5a3.5 3.5 0 0 1 0 6.5M18 14.5a6 6 0 0 1 3 5.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" d="m8.3 12.3 2.5 2.5 4.9-5"/></symbol>
+  <symbol id="i-calendario" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v14H4zM4 10h16M8 3.5V7m8-3.5V7M8 14h2m4 0h2m-8 3h2"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></symbol>
+  <symbol id="i-correo" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3.5 6h17v12h-17zm0 .5L12 13l8.5-6.5"/></symbol>
+  <symbol id="i-ubicacion" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11Zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.46 15.06L2 22l5.08-1.53A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.3 14.98l-.3-.19-3 .9.92-2.92-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.3 3.9c-.2 0-.5.07-.76.36-.26.28-1 1-1 2.4s1.03 2.78 1.17 2.97c.14.19 2 3.18 4.93 4.33 2.43.96 2.93.77 3.46.72.53-.05 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.33-.29-.15-1.7-.84-1.96-.94-.27-.1-.46-.14-.65.15-.2.28-.75.93-.92 1.12-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.44a8.7 8.7 0 0 1-1.6-2c-.17-.3-.02-.45.13-.6.13-.13.29-.34.43-.5.15-.18.2-.3.29-.5.1-.19.05-.36-.02-.5-.07-.15-.64-1.58-.9-2.16-.22-.52-.46-.52-.65-.53h-.56Z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <img src="assets/img/logo-gonfle.png" alt="Gonflé. Sentimos tu marca">
+    <a class="btn btn-wa" data-wa="cita" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span>Agendar una cita</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Presentación comercial · Medellín</span>
+      <h1>Más que productos, <em>experiencias que conectan.</em></h1>
+      <p class="lead">En Gonflé somos tu aliado estratégico en la creación de experiencias, productos y servicios que hacen visible tu marca, fortalecen tus equipos y generan un impacto positivo en tus clientes.</p>
+      <div class="acc">
+        <a class="btn btn-wa" data-wa="cita" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar una cita</a>
+        <a class="btn btn-linea" href="#lineas">Ver líneas de negocio</a>
+      </div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <div class="pieza p1"><img src="assets/img/inf-pato.webp" alt=""></div>
+      <div class="pieza p2"><img src="assets/img/m-gorra-neville.webp" alt=""></div>
+      <div class="pieza p3"><img src="assets/img/m-libreta.webp" alt=""></div>
+      <div class="pieza p4"><img src="assets/img/m-slim-bag.webp" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<nav class="banda" aria-label="Líneas de negocio">
+  <div class="wrap">
+    <a href="#regalos"><span class="ico c-rojo"><svg><use href="#i-regalo"/></svg></span>Regalos corporativos</a>
+    <a href="#catering"><span class="ico c-amarillo"><svg><use href="#i-catering"/></svg></span>Catering empresarial</a>
+    <a href="#inflables"><span class="ico c-rojo"><svg><use href="#i-inflable"/></svg></span>Inflables y activaciones</a>
+    <a href="#publicidad"><span class="ico c-amarillo"><svg><use href="#i-megafono"/></svg></span>Publicidad y merchandising</a>
+    <a href="#bienestar"><span class="ico c-rojo"><svg><use href="#i-salud"/></svg></span>Semana de la Salud</a>
+  </div>
+</nav>
+
+<section class="sec gris" id="lineas">
+  <div class="wrap">
+    <div class="cab"><span class="eyebrow">Nuestras líneas de negocio</span><h2>Soluciones integrales para cada necesidad de tu empresa</h2><p>Puedes contratar una sola línea o combinarlas en un mismo proyecto, con un solo aliado.</p></div>
+    <div class="lineas">
+      <article class="linea" id="regalos">
+        <div class="linea-vis c-rojo"><span class="ico"><svg><use href="#i-regalo"/></svg></span></div>
+        <div class="linea-txt">
+          <span class="num">01</span>
+          <h3>Regalos corporativos y cajas de Navidad</h3>
+          <p>Detalles con la identidad de tu marca para reconocer a quienes hacen parte de tu empresa.</p>
+          <ul class="puntos"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul>
+        </div>
+      </article>
+      <article class="linea" id="catering">
+        <div class="linea-vis c-amarillo"><span class="ico"><svg><use href="#i-catering"/></svg></span></div>
+        <div class="linea-txt">
+          <span class="num">02</span>
+          <h3>Catering empresarial</h3>
+          <p>Alimentación para reuniones, capacitaciones y eventos corporativos.</p>
+          <ul class="puntos"><li>Desayunos</li><li>Brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos</li><li>Eventos corporativos</li></ul>
+        </div>
+      </article>
+      <article class="linea" id="inflables">
+        <div class="linea-vis"><img src="assets/img/inf-hamburguesa.webp" alt="Inflable publicitario con forma de producto" loading="lazy"></div>
+        <div class="linea-txt">
+          <span class="num">03</span>
+          <h3>Inflables y activaciones de marca</h3>
+          <p>Inflables publicitarios a la medida, a motor o sellados, para que tu marca se vea desde lejos.</p>
+          <ul class="puntos"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul>
+        </div>
+      </article>
+      <article class="linea" id="publicidad">
+        <div class="linea-vis"><img src="assets/img/m-tulas.webp" alt="Productos promocionales personalizables" loading="lazy"></div>
+        <div class="linea-txt">
+          <span class="num">04</span>
+          <h3>Publicidad y merchandising</h3>
+          <p>Productos marcados con tu logo para el punto de venta, tus campañas y tus equipos.</p>
+          <ul class="puntos"><li>Material POP</li><li>Productos promocionales</li><li>Textiles personalizados</li><li>Vasos, copas y caramañolas</li><li>Empaques e impresos</li></ul>
+        </div>
+      </article>
+      <article class="linea" id="bienestar">
+        <div class="linea-vis c-morado"><span class="ico"><svg><use href="#i-salud"/></svg></span></div>
+        <div class="linea-txt">
+          <span class="num">05</span>
+          <h3>Semana de la Salud y Bienestar</h3>
+          <p>Jornadas para el bienestar de tus colaboradores, con alimentación y material de marca.</p>
+          <ul class="puntos"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="cab"><span class="eyebrow">¿Por qué elegirnos?</span><h2>Sentimos tu marca como si fuera nuestra</h2></div>
+    <div class="razones">
+      <div class="razon"><span class="ico c-amarillo"><svg><use href="#i-estrella"/></svg></span><h3>Experiencia y compromiso</h3><p>Acompañamos cada proyecto de principio a fin.</p></div>
+      <div class="razon"><span class="ico c-rojo"><svg><use href="#i-medida"/></svg></span><h3>Producción a la medida</h3><p>Todo se produce y personaliza con la identidad de tu marca.</p></div>
+      <div class="razon"><span class="ico c-morado"><svg><use href="#i-aliado"/></svg></span><h3>Un solo aliado</h3><p>Múltiples soluciones coordinadas en un mismo proveedor.</p></div>
+      <div class="razon"><span class="ico c-amarillo"><svg><use href="#i-check"/></svg></span><h3>Calidad y cumplimiento</h3><p>Atención cercana y entregas en la fecha acordada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec gris">
+  <div class="wrap">
+    <div class="cab"><span class="eyebrow">Cómo trabajamos</span><h2>De la idea a la entrega</h2></div>
+    <div class="pasos">
+      <div class="paso"><h3>Conversamos</h3><p>Nos cuentas qué necesitas, para cuántas personas y para qué fecha.</p></div>
+      <div class="paso"><h3>Proponemos</h3><p>Te enviamos una propuesta a la medida de tu presupuesto.</p></div>
+      <div class="paso"><h3>Aprobamos el diseño</h3><p>Validas el arte y los detalles antes de producir.</p></div>
+      <div class="paso"><h3>Producimos y entregamos</h3><p>Coordinamos la producción y la entrega en la fecha acordada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="cierre" id="contacto">
+      <div>
+        <h2>¡Conversemos!</h2>
+        <p>Cuéntanos qué necesitas y juntos creamos la mejor experiencia para tu empresa. Agenda una cita y te contactamos.</p>
+        <div class="acc">
+          <a class="btn btn-blanco" data-wa="cita" href="#" target="_blank" rel="noopener"><svg><use href="#i-calendario"/></svg>Agendar una cita</a>
+          <a class="btn btn-fantasma" data-wa="necesidad" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Cuéntanos qué necesitas</a>
+        </div>
+      </div>
+      <div class="contacto">
+        <div><svg><use href="#i-tel"/></svg><a data-wa="cita" href="#" target="_blank" rel="noopener">(+57) 312 757 6447</a></div>
+        <div><svg><use href="#i-correo"/></svg><a href="mailto:gerencia@gonflegroup.com?subject=Solicitud%20de%20cita%20-%20Gonfl%C3%A9">gerencia@gonflegroup.com</a></div>
+        <div><svg><use href="#i-ubicacion"/></svg><span>Medellín, Antioquia</span></div>
+        <div><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/gonfleoficial/" target="_blank" rel="noopener">@gonfleoficial</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/img/logo-gonfle.png" alt="Gonflé. Sentimos tu marca">
+  <p>Gonflé S.A.S. · Medellín, Colombia</p>
+</footer>
+
+<a class="wa-flot" data-wa="cita" href="#" target="_blank" rel="noopener" aria-label="Agendar una cita por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+// Enlaces de WhatsApp con mensaje prellenado.
+const NUMERO = "573127576447";
+const MENSAJES = {
+  cita: "Hola Gonflé, vi su presentación comercial y quiero agendar una cita.",
+  necesidad: "Hola Gonflé, vi su presentación comercial y quiero contarles lo que necesito.",
+};
+document.querySelectorAll("[data-wa]").forEach((a) => {
+  a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(MENSAJES[a.dataset.wa]);
+});
+</script>
+</body>
+</html>
