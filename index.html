@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gonflé | Presentación comercial</title>
-<meta name="description" content="Gonflé: regalos corporativos, catering empresarial, inflables y activaciones de marca, publicidad y merchandising, y Semana de la Salud. Agenda una cita por WhatsApp.">
+<meta name="description" content="Gonflé: regalos corporativos, catering empresarial, inflables y activaciones de marca, publicidad y merchandising, y proyectos especiales. Agenda una cita por WhatsApp.">
 <meta name="theme-color" content="#EB0045">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CO">
 <meta property="og:site_name" content="Gonflé">
 <meta property="og:title" content="Gonflé | Más que productos, experiencias que conectan">
-<meta property="og:description" content="Regalos corporativos, catering, inflables, publicidad y bienestar para empresas. Agenda una cita.">
+<meta property="og:description" content="Regalos corporativos, catering, inflables, publicidad y proyectos especiales para empresas. Agenda una cita.">
 <meta property="og:image" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/assets/img/vista-previa.png">
 <meta property="og:url" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="comun.css?v=5ro">
+<link rel="stylesheet" href="comun.css?v=5rop">
 <style>
 html{scroll-behavior:smooth}
 body{font-size:16.5px;line-height:1.65;background:#fff}
@@ -60,7 +60,7 @@ h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.03em}
 /* Franja de líneas */
 .franja{background:var(--rojo);color:#fff}
 .franja .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 0;padding-top:18px;padding-bottom:18px}
-.franja a{color:#fff;text-decoration:none;font-weight:600;font-size:.98rem;padding:4px 0}
+.franja a{white-space:nowrap;color:#fff;text-decoration:none;font-weight:600;font-size:.98rem;padding:4px 0}
 .franja a:hover{color:var(--amarillo)}
 .franja span{opacity:.5}
 
@@ -74,7 +74,7 @@ h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.03em}
 .linea-txt h3{font-size:1.65rem;font-weight:800;letter-spacing:-.025em;margin-bottom:12px}
 .linea-txt p{margin-bottom:18px;font-size:1.04rem}
 .items{margin-bottom:24px;color:var(--tinta);font-size:.96rem;line-height:1.9}
-.items li{display:inline}
+.items li{display:inline-block;max-width:100%}
 .items li:not(:last-child)::after{content:"·";color:var(--rojo);font-weight:700;margin:0 10px}
 
 /* Por qué */
@@ -129,6 +129,9 @@ footer img{height:38px}
   .sec{padding:64px 0}
 }
 @media (max-width:560px){
+  .items li{display:block;padding:3px 0}
+  .items li::after{display:none}
+  .items li::before{content:"";display:inline-block;width:10px;height:2px;background:var(--rojo);vertical-align:middle;margin-right:10px}
   .wrap{padding:0 20px}
   .top .btn span{display:none}
   .top .btn{padding:10px 14px}
@@ -189,7 +192,7 @@ footer img{height:38px}
     <a href="#catering">Catering empresarial</a><span>/</span>
     <a href="#inflables">Inflables y activaciones</a><span>/</span>
     <a href="#publicidad">Publicidad y merchandising</a><span>/</span>
-    <a href="#bienestar">Semana de la Salud</a>
+    <a href="#bienestar">Proyectos especiales</a>
   </div>
 </nav>
 
@@ -237,12 +240,12 @@ footer img{height:38px}
         </div>
       </article>
       <article class="linea" id="bienestar">
-        <div class="linea-vis"><img src="assets/img/foto-salud.webp" alt="Kit de bienestar para la Semana de la Salud" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-salud.webp" alt="Kit de bienestar personalizado con el logo de Gonflé" loading="lazy"></div>
         <div class="linea-txt">
-          <h3>Semana de la Salud y Bienestar</h3>
-          <p>Jornadas para el bienestar de tus colaboradores, con alimentación y material de marca.</p>
-          <ul class="items"><li>Refrigerios saludables</li><li>Desayunos y almuerzos</li><li>Kits de bienestar</li><li>Actividades y capacitaciones</li></ul>
-          <a class="enlace" data-wa="bienestar" href="#" target="_blank" rel="noopener">Planear la Semana de la Salud<svg><use href="#i-flecha"/></svg></a>
+          <h3>Proyectos especiales y personalizados</h3>
+          <p>Soluciones a la medida que combinan alimentación, regalos, publicidad e inflables en un solo proyecto para tu empresa.</p>
+          <ul class="items"><li>Semana de la Salud y bienestar</li><li>Fin de año empresarial</li><li>Lanzamientos de producto</li><li>Bienvenida de colaboradores</li><li>Atención a clientes VIP</li></ul>
+          <a class="enlace" data-wa="bienestar" href="#" target="_blank" rel="noopener">Cuéntanos tu proyecto<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
     </div>
@@ -315,7 +318,7 @@ const MENSAJES = {
   catering: "Hola Gonflé, quiero cotizar catering empresarial.",
   inflables: "Hola Gonflé, quiero cotizar inflables o una activación de marca.",
   publicidad: "Hola Gonflé, quiero cotizar publicidad y merchandising con mi logo.",
-  bienestar: "Hola Gonflé, quiero planear la Semana de la Salud de mi empresa.",
+  bienestar: "Hola Gonflé, quiero contarles un proyecto especial para mi empresa.",
 };
 document.querySelectorAll("[data-wa]").forEach((a) => {
   a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(MENSAJES[a.dataset.wa]);
