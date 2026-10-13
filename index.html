@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gonflé | Presentación comercial</title>
-<meta name="description" content="Gonflé: regalos corporativos, catering empresarial, inflables y activaciones de marca, publicidad y merchandising, impresos y empaques, y proyectos especiales. Agenda una cita por WhatsApp.">
+<meta name="description" content="Gonflé: regalos corporativos, brunch corporativo para eventos, inflables y activaciones de marca, publicidad y merchandising, impresos y empaques, y proyectos especiales. Agenda una cita por WhatsApp.">
 <meta name="theme-color" content="#EB0045">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CO">
 <meta property="og:site_name" content="Gonflé">
 <meta property="og:title" content="Gonflé | Más que productos, experiencias que conectan">
-<meta property="og:description" content="Regalos corporativos, catering, inflables, publicidad y proyectos especiales para empresas. Agenda una cita.">
+<meta property="og:description" content="Regalos corporativos, brunch para eventos, inflables, publicidad y proyectos especiales para empresas. Agenda una cita.">
 <meta property="og:image" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/assets/img/vista-previa-2.png">
 <meta property="og:url" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/">
 <meta name="twitter:card" content="summary_large_image">
@@ -42,8 +42,8 @@ h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.03em}
 
 /* Encabezado */
 .top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--linea)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
-.top img{height:40px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:16px}
+.top img{height:56px}
 .top .btn{padding:10px 18px;font-size:.92rem}
 
 /* Hero */
@@ -71,11 +71,36 @@ h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.03em}
 .linea:last-child{border-bottom:1px solid var(--linea)}
 .linea:nth-child(even) .linea-vis{order:2}
 .linea-vis img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
-.linea-txt h3{font-size:1.65rem;font-weight:800;letter-spacing:-.025em;margin-bottom:12px}
-.linea-txt p{margin-bottom:18px;font-size:1.04rem}
-.items{margin-bottom:24px;color:var(--tinta);font-size:.96rem;line-height:1.9}
+.linea-txt h3{font-size:1.85rem;font-weight:800;letter-spacing:-.025em;margin-bottom:12px}
+.linea-txt p{margin-bottom:18px;font-size:1.15rem}
+.items{margin-bottom:24px;color:var(--tinta);font-size:1.07rem;line-height:1.9}
 .items li{display:inline-block;max-width:100%}
 .items li:not(:last-child)::after{content:"·";color:var(--rojo);font-weight:700;margin:0 10px}
+/* Inflables: A = foto principal y dos pequeñas (por defecto), B = una sola foto combinada, C = tres fotos iguales a lo ancho */
+.inf-vis{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.inf-vis figure{margin:0}
+.inf-vis figcaption{margin-top:8px;font-size:.92rem;font-weight:600;color:var(--tinta)}
+.inf-vis .inf-p{grid-column:span 2}
+.inf-vis .inf-p img{aspect-ratio:16/10}
+.inf-vis .inf-s img{aspect-ratio:4/3}
+.inf-vis .inf-mix{display:none}
+.inf-b .inf-vis figure{display:none}
+.inf-b .inf-vis .inf-mix{display:block;grid-column:span 2}
+.inf-b .inf-vis .inf-mix img{aspect-ratio:4/3}
+.inf-c{grid-template-columns:1fr;gap:28px}
+.inf-c .linea-vis{order:2;grid-template-columns:repeat(3,1fr);gap:28px}
+.inf-c .inf-vis .inf-p{grid-column:auto}
+.inf-c .inf-vis img,.inf-c .inf-vis .inf-p img{aspect-ratio:4/3}
+.inf-c .inf-vis figcaption{font-size:1.1rem;font-weight:800}
+.inf-c .linea-txt p{max-width:640px}
+.linea.ancha{grid-template-columns:1fr;gap:28px}
+.linea.ancha .linea-txt p{max-width:640px;margin-bottom:0}
+.linea.ancha .enlace{justify-self:start}
+.subs{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.sub{margin:0}
+.sub img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+.sub figcaption{font-size:1.02rem;margin-top:14px}
+.sub b{display:block;color:var(--tinta);font-size:1.22rem;font-weight:800;letter-spacing:-.015em;margin-bottom:6px}
 
 /* Por qué */
 .porque{background:var(--amarillo);color:#3A2600}
@@ -121,6 +146,8 @@ footer img{height:38px}
   .intro{grid-template-columns:1fr;gap:16px;margin-bottom:32px}
   .linea{grid-template-columns:1fr;gap:24px;padding:36px 0}
   .linea:nth-child(even) .linea-vis{order:0}
+  .subs{grid-template-columns:1fr;gap:32px}
+  .inf-c .linea-vis{grid-template-columns:1fr;order:0}
   .porque .wrap{grid-template-columns:1fr;gap:32px}
   .razones div{grid-template-columns:1fr;gap:4px}
   .pasos{grid-template-columns:1fr 1fr}
@@ -135,6 +162,8 @@ footer img{height:38px}
   .wrap{padding:0 20px}
   .top .btn span{display:none}
   .top .btn{padding:10px 14px}
+  .top .wrap{height:76px}
+  .top img{height:48px}
   .acc .btn,.cierre .btn{width:100%}
   .pasos{grid-template-columns:1fr}
   .pasos li,.pasos li+li{padding:20px 0 4px;border-left:0}
@@ -189,7 +218,7 @@ footer img{height:38px}
 <nav class="franja" aria-label="Líneas de negocio">
   <div class="wrap">
     <a href="#regalos">Regalos corporativos</a><span>/</span>
-    <a href="#catering">Catering empresarial</a><span>/</span>
+    <a href="#catering">Brunch corporativo</a><span>/</span>
     <a href="#inflables">Inflables</a><span>/</span>
     <a href="#publicidad">Merchandising</a><span>/</span>
     <a href="#impresos">Impresos y POP</a><span>/</span>
@@ -205,29 +234,34 @@ footer img{height:38px}
     </div>
     <div class="lineas">
       <article class="linea" id="regalos">
-        <div class="linea-vis"><img src="assets/img/foto-regalos.webp" alt="Caja de regalo corporativo de Navidad con el logo de Gonflé" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-regalos.webp" alt="Caja de regalo corporativo de temporada con el logo de Gonflé" loading="lazy"></div>
         <div class="linea-txt">
-          <h3>Regalos corporativos y cajas de Navidad</h3>
+          <h3>Regalos corporativos y cajas de temporada</h3>
           <p>Detalles con la identidad de tu marca para reconocer a quienes hacen parte de tu empresa.</p>
-          <ul class="items"><li>Cajas personalizadas</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul>
+          <ul class="items"><li>Cajas personalizadas (se arman a tu gusto)</li><li>Kits empresariales</li><li>Regalos para colaboradores, clientes y proveedores</li><li>Detalles que dejan huella</li></ul>
           <a class="enlace" data-wa="regalos" href="#" target="_blank" rel="noopener">Cotizar regalos<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
       <article class="linea" id="catering">
-        <div class="linea-vis"><img src="assets/img/foto-catering.webp" alt="Catering empresarial para una reunión" loading="lazy"></div>
+        <div class="linea-vis"><img src="assets/img/foto-catering.webp" alt="Brunch corporativo para un evento empresarial" loading="lazy"></div>
         <div class="linea-txt">
-          <h3>Catering empresarial</h3>
+          <h3>Brunch corporativo para eventos</h3>
           <p>Alimentación para reuniones, capacitaciones y eventos corporativos.</p>
           <ul class="items"><li>Desayunos</li><li>Brunch</li><li>Refrigerios</li><li>Lunch y almuerzos</li><li>Estaciones de alimentos</li><li>Eventos corporativos</li></ul>
-          <a class="enlace" data-wa="catering" href="#" target="_blank" rel="noopener">Cotizar catering<svg><use href="#i-flecha"/></svg></a>
+          <a class="enlace" data-wa="catering" href="#" target="_blank" rel="noopener">Cotizar brunch<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
       <article class="linea" id="inflables">
-        <div class="linea-vis"><img src="assets/img/foto-inflables.webp" alt="Activación de marca con arco inflable" loading="lazy"></div>
+        <div class="linea-vis inf-vis">
+          <figure class="inf-p"><img src="assets/img/foto-inflables.webp" alt="Arco inflable a motor con el logo de Gonflé en una activación de marca" loading="lazy"><figcaption>Inflables a motor</figcaption></figure>
+          <figure class="inf-s"><img src="assets/img/foto-inf-golpeadores.webp" alt="Golpeadores inflables con el logo de Gonflé en un estadio" loading="lazy"><figcaption>Golpeadores en válvula</figcaption></figure>
+          <figure class="inf-s"><img src="assets/img/foto-inf-sellados.webp" alt="Piscina, flotadores, pelota y botellas inflables selladas con el logo de Gonflé" loading="lazy"><figcaption>Sellados: piscinas, flotadores y botellas</figcaption></figure>
+          <figure class="inf-mix"><img src="assets/img/foto-inf-mix.webp" alt="Arco, botella inflable y golpeadores con el logo de Gonflé en una activación" loading="lazy"></figure>
+        </div>
         <div class="linea-txt">
           <h3>Inflables y activaciones de marca</h3>
-          <p>Inflables publicitarios a la medida, a motor o sellados, para que tu marca se vea desde lejos.</p>
-          <ul class="items"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca</li></ul>
+          <p>Inflables publicitarios a la medida: a motor, golpeadores en válvula y sellados, para que tu marca se vea desde lejos.</p>
+          <ul class="items"><li>Inflables publicitarios</li><li>Eventos y activaciones</li><li>Lanzamientos</li><li>Experiencias de marca (hechas a la idea del cliente)</li><li>Todos personalizados</li></ul>
           <a class="enlace" data-wa="inflables" href="#" target="_blank" rel="noopener">Cotizar inflables<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
@@ -240,14 +274,20 @@ footer img{height:38px}
           <a class="enlace" data-wa="publicidad" href="#" target="_blank" rel="noopener">Cotizar merchandising<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
-      <article class="linea" id="impresos">
-        <div class="linea-vis"><img src="assets/img/foto-impresos.webp" alt="Bolsas, cajas, libretas, calendario y exhibidor impresos con el logo de Gonflé" loading="lazy"></div>
+      <article class="linea ancha" id="impresos">
         <div class="linea-txt">
           <h3>Impresos, empaques y material POP</h3>
-          <p>Piezas impresas con la identidad de tu marca para empacar, comunicar y destacar en el punto de venta.</p>
-          <ul class="items"><li>Bolsas y cajas personalizadas</li><li>Libretas, agendas y calendarios</li><li>Afiches, volantes y trípticos</li><li>Exhibidores para punto de venta</li></ul>
-          <a class="enlace" data-wa="impresos" href="#" target="_blank" rel="noopener">Cotizar impresos<svg><use href="#i-flecha"/></svg></a>
+          <p>Piezas impresas con la identidad de tu marca para empacar, comunicar y destacar en el punto de venta y en tus eventos.</p>
         </div>
+        <div class="subs">
+          <figure class="sub"><img src="assets/img/foto-impresos.webp" alt="Bolsas, cajas, libretas y calendario impresos con el logo de Gonflé" loading="lazy">
+            <figcaption><b>Impresos en litografía</b>Bolsas, cajas, libretas, agendas, calendarios, afiches, trípticos y exhibidores en papel y cartón.</figcaption></figure>
+          <figure class="sub"><img src="assets/img/foto-imp-flexo.webp" alt="Cerramiento de plastilona y banderines impresos con el logo de Gonflé en un evento" loading="lazy">
+            <figcaption><b>Impresos en flexografía</b>Plastilonas, banderines y bolsas plásticas impresas para cerrar espacios y vestir tus eventos.</figcaption></figure>
+          <figure class="sub"><img src="assets/img/foto-imp-sostenible.webp" alt="Exhibidor y bandeja de PET reciclado con el logo de Gonflé" loading="lazy">
+            <figcaption><b>Impresos en material sostenible</b>Exhibidores y bandejas en PET reciclado. Para una bandeja organizadora, nuestros aliados recuperaron 942 kilos de PET, equivalentes a 28.260 botellas de 300 ml.</figcaption></figure>
+        </div>
+        <a class="enlace" data-wa="impresos" href="#" target="_blank" rel="noopener">Cotizar impresos<svg><use href="#i-flecha"/></svg></a>
       </article>
       <article class="linea" id="bienestar">
         <div class="linea-vis"><img src="assets/img/foto-salud.webp" alt="Kit de bienestar personalizado con el logo de Gonflé" loading="lazy"></div>
@@ -325,12 +365,15 @@ const MENSAJES = {
   cita: "Hola Gonflé, vi su presentación comercial y quiero agendar una cita.",
   necesidad: "Hola Gonflé, vi su presentación comercial y quiero contarles lo que necesito.",
   regalos: "Hola Gonflé, quiero cotizar regalos corporativos para mi empresa.",
-  catering: "Hola Gonflé, quiero cotizar catering empresarial.",
+  catering: "Hola Gonflé, quiero cotizar un brunch corporativo para un evento.",
   inflables: "Hola Gonflé, quiero cotizar inflables o una activación de marca.",
   publicidad: "Hola Gonflé, quiero cotizar publicidad y merchandising con mi logo.",
   impresos: "Hola Gonflé, quiero cotizar impresos, empaques o material POP con mi marca.",
   bienestar: "Hola Gonflé, quiero contarles un proyecto especial para mi empresa.",
 };
+// ?inflables=b (una foto combinada) o ?inflables=c (tres fotos a lo ancho); por defecto, foto principal y dos pequeñas
+const vInf = new URLSearchParams(location.search).get("inflables");
+if (vInf === "b" || vInf === "c") document.getElementById("inflables").classList.add("inf-" + vInf);
 // ?fotos=gemini muestra la versión anterior de las imágenes (Gemini), guardada como respaldo
 if (new URLSearchParams(location.search).get("fotos") === "gemini") {
   document.querySelectorAll('img[src*="assets/img/foto-"]').forEach((i) => { i.src = i.getAttribute("src").replace("assets/img/foto-", "assets/img/gemini/foto-"); });
