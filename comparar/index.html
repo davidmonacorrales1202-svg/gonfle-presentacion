@@ -37,10 +37,10 @@ footer{padding:32px 0 48px;font-size:.88rem;color:var(--suave)}
   <header>
     <img src="../assets/img/logo-gonfle.png" alt="Gonflé">
     <h1>Gemini o ChatGPT: comparación de imágenes</h1>
-    <p>Las mismas escenas de la presentación comercial generadas con dos herramientas de IA, ambas con el logo oficial de Gonflé. A la izquierda Gemini (las que están publicadas hoy), a la derecha ChatGPT.</p>
+    <p>Las mismas escenas de la presentación comercial generadas con dos herramientas de IA, ambas con el logo oficial de Gonflé. A la izquierda Gemini (versión anterior, guardada como respaldo), a la derecha ChatGPT (la versión publicada).</p>
     <div class="acc">
-      <a class="btn" href="../">Ver presentación con Gemini</a>
-      <a class="btn rojo" href="../?fotos=chatgpt">Ver presentación con ChatGPT</a>
+      <a class="btn" href="../?fotos=gemini">Ver presentación con Gemini</a>
+      <a class="btn rojo" href="../">Ver presentación con ChatGPT</a>
     </div>
   </header>
   <div id="filas"></div>
@@ -52,8 +52,8 @@ document.getElementById("filas").innerHTML = ESCENAS.map(([k,t]) => `
   <section class="fila">
     <h2>${t}</h2>
     <div class="par">
-      <figure class="gem"><img src="../assets/img/foto-${k}.webp" alt="${t} generada con Gemini" loading="lazy"><figcaption><b>Gemini</b></figcaption></figure>
-      <figure class="gpt"><img src="../assets/img/gpt/foto-${k}.webp" alt="${t} generada con ChatGPT" loading="lazy"><figcaption><b>ChatGPT</b></figcaption></figure>
+      <figure class="gem"><img src="../assets/img/gemini/foto-${k}.webp" alt="${t} generada con Gemini" loading="lazy"><figcaption><b>Gemini</b></figcaption></figure>
+      <figure class="gpt"><img src="../assets/img/foto-${k}.webp" alt="${t} generada con ChatGPT" loading="lazy"><figcaption><b>ChatGPT</b></figcaption></figure>
     </div>
   </section>`).join("");
 </script>

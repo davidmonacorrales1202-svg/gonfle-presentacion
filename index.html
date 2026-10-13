@@ -11,7 +11,7 @@
 <meta property="og:site_name" content="Gonflé">
 <meta property="og:title" content="Gonflé | Más que productos, experiencias que conectan">
 <meta property="og:description" content="Regalos corporativos, catering, inflables, publicidad y proyectos especiales para empresas. Agenda una cita.">
-<meta property="og:image" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/assets/img/vista-previa.png">
+<meta property="og:image" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/assets/img/vista-previa-2.png">
 <meta property="og:url" content="https://davidmonacorrales1202-svg.github.io/gonfle-presentacion/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.png">
@@ -320,9 +320,9 @@ const MENSAJES = {
   publicidad: "Hola Gonflé, quiero cotizar publicidad y merchandising con mi logo.",
   bienestar: "Hola Gonflé, quiero contarles un proyecto especial para mi empresa.",
 };
-// ?fotos=chatgpt muestra la versión de las imágenes generadas con ChatGPT
-if (new URLSearchParams(location.search).get("fotos") === "chatgpt") {
-  document.querySelectorAll('img[src*="assets/img/foto-"]').forEach((i) => { i.src = i.getAttribute("src").replace("assets/img/foto-", "assets/img/gpt/foto-"); });
+// ?fotos=gemini muestra la versión anterior de las imágenes (Gemini), guardada como respaldo
+if (new URLSearchParams(location.search).get("fotos") === "gemini") {
+  document.querySelectorAll('img[src*="assets/img/foto-"]').forEach((i) => { i.src = i.getAttribute("src").replace("assets/img/foto-", "assets/img/gemini/foto-"); });
 }
 document.querySelectorAll("[data-wa]").forEach((a) => {
   a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(MENSAJES[a.dataset.wa]);
