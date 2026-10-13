@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparación de imágenes | Gonflé</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--rojo:#EB0045;--amarillo:#FEE123;--tinta:#1E1630;--texto:#4A4458;--suave:#7B748A;--linea:#E8E3EE}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Poppins",system-ui,sans-serif;color:var(--texto);background:#fff;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{padding:40px 0 24px;border-bottom:2px solid var(--tinta)}
+header img{height:46px;margin-bottom:22px}
+h1{margin:0 0 10px;color:var(--tinta);font-size:clamp(1.7rem,3.6vw,2.5rem);letter-spacing:-.03em;line-height:1.1}
+header p{margin:0;max-width:720px;font-size:1.04rem}
+.acc{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--tinta);color:var(--tinta)}
+.btn.rojo{background:var(--rojo);border-color:var(--rojo);color:#fff}
+.fila{padding:36px 0;border-bottom:1px solid var(--linea)}
+.fila h2{margin:0 0 16px;color:var(--tinta);font-size:1.3rem}
+.par{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+figure{margin:0}
+figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block;background:#F4F1F8}
+figcaption{display:flex;justify-content:space-between;margin-top:8px;font-size:.88rem}
+figcaption b{color:var(--tinta)}
+.gem b::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:#4285F4;margin-right:8px}
+.gpt b::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:#10A37F;margin-right:8px}
+footer{padding:32px 0 48px;font-size:.88rem;color:var(--suave)}
+@media (max-width:700px){.par{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="../assets/img/logo-gonfle.png" alt="Gonflé">
+    <h1>Gemini o ChatGPT: comparación de imágenes</h1>
+    <p>Las mismas escenas de la presentación comercial generadas con dos herramientas de IA, ambas con el logo oficial de Gonflé. A la izquierda Gemini (las que están publicadas hoy), a la derecha ChatGPT.</p>
+    <div class="acc">
+      <a class="btn" href="../">Ver presentación con Gemini</a>
+      <a class="btn rojo" href="../?fotos=chatgpt">Ver presentación con ChatGPT</a>
+    </div>
+  </header>
+  <div id="filas"></div>
+  <footer>Imágenes ilustrativas generadas con inteligencia artificial. No corresponden a trabajos entregados por Gonflé.</footer>
+</div>
+<script>
+const ESCENAS = [["regalos","Regalos corporativos"],["catering","Catering empresarial"],["inflables","Inflables y activaciones"],["merch","Publicidad y merchandising"],["salud","Proyectos especiales"],["evento","Imagen principal: evento corporativo"],["pop","Material POP"]];
+document.getElementById("filas").innerHTML = ESCENAS.map(([k,t]) => `
+  <section class="fila">
+    <h2>${t}</h2>
+    <div class="par">
+      <figure class="gem"><img src="../assets/img/foto-${k}.webp" alt="${t} generada con Gemini" loading="lazy"><figcaption><b>Gemini</b></figcaption></figure>
+      <figure class="gpt"><img src="../assets/img/gpt/foto-${k}.webp" alt="${t} generada con ChatGPT" loading="lazy"><figcaption><b>ChatGPT</b></figcaption></figure>
+    </div>
+  </section>`).join("");
+</script>
+</body>
+</html>

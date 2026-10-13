@@ -320,6 +320,10 @@ const MENSAJES = {
   publicidad: "Hola Gonflé, quiero cotizar publicidad y merchandising con mi logo.",
   bienestar: "Hola Gonflé, quiero contarles un proyecto especial para mi empresa.",
 };
+// ?fotos=chatgpt muestra la versión de las imágenes generadas con ChatGPT
+if (new URLSearchParams(location.search).get("fotos") === "chatgpt") {
+  document.querySelectorAll('img[src*="assets/img/foto-"]').forEach((i) => { i.src = i.getAttribute("src").replace("assets/img/foto-", "assets/img/gpt/foto-"); });
+}
 document.querySelectorAll("[data-wa]").forEach((a) => {
   a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(MENSAJES[a.dataset.wa]);
 });
