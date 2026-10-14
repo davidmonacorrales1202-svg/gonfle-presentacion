@@ -22,7 +22,7 @@ html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
 .f{position:relative;border-radius:26px;overflow:hidden;box-shadow:0 14px 30px rgba(30,22,48,.16)}
 .f img{width:100%;height:100%;object-fit:cover;display:block}
 .f.g{grid-column:span 3;height:304px}
-.f.p{grid-column:span 2;height:262px}
+.f.p{grid-column:span 2;height:282px}
 .pill{position:absolute;left:14px;top:14px;display:flex;align-items:center;gap:10px;padding:9px 18px 9px 10px;border-radius:999px;font-size:22px;font-weight:700;letter-spacing:-.01em;box-shadow:0 6px 16px rgba(0,0,0,.18)}
 .pill i{width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
 .pill i svg{width:22px;height:22px}
@@ -49,6 +49,7 @@ html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-impreso" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></symbol>
   <symbol id="i-regalo" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 9h16v4H4zm1.5 4V20h13v-7M12 9v11M12 9S10.5 4.5 8 5s-1 4 4 4Zm0 0s1.5-4.5 4-4 1 4-4 4Z"/></symbol>
   <symbol id="i-catering" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3 17h18M5 17a7 7 0 0 1 14 0M12 8V6.5M10.5 6.5h3M2.5 20h19"/></symbol>
   <symbol id="i-inflable" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3 20V12a9 9 0 0 1 18 0v8M7 20v-8a5 5 0 0 1 10 0v8M2 20h5m10 0h5"/></symbol>
@@ -75,11 +76,12 @@ html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
   </div>
 
   <div class="fotos">
-    <div class="f g"><img src="../assets/img/foto-regalos.webp" alt=""><span class="pill r"><i><svg><use href="#i-regalo"/></svg></i>Regalos corporativos</span></div>
-    <div class="f g"><img src="../assets/img/foto-catering.webp" alt=""><span class="pill a"><i><svg><use href="#i-catering"/></svg></i>Brunch corporativo</span></div>
+    <div class="f p"><img src="../assets/img/foto-regalos.webp" alt=""><span class="pill r"><i><svg><use href="#i-regalo"/></svg></i>Regalos corporativos</span></div>
+    <div class="f p"><img src="../assets/img/foto-catering.webp" alt=""><span class="pill a"><i><svg><use href="#i-catering"/></svg></i>Brunch corporativo</span></div>
     <div class="f p"><img src="../assets/img/foto-inf-mix.webp" alt=""><span class="pill r"><i><svg><use href="#i-inflable"/></svg></i>Inflables</span></div>
     <div class="f p"><img src="../assets/img/foto-merch.webp" alt=""><span class="pill a"><i><svg><use href="#i-megafono"/></svg></i>Merchandising</span></div>
-    <div class="f p"><img src="../assets/img/foto-salud.webp" alt=""><span class="pill r"><i><svg><use href="#i-estrella"/></svg></i>Proyectos especiales</span></div>
+    <div class="f p"><img src="../assets/img/foto-impresos.webp" alt=""><span class="pill r"><i><svg><use href="#i-impreso"/></svg></i>Impresos y POP</span></div>
+    <div class="f p"><img src="../assets/img/foto-salud.webp" alt=""><span class="pill a"><i><svg><use href="#i-estrella"/></svg></i>Proyectos especiales</span></div>
   </div>
 
   <div class="base">
