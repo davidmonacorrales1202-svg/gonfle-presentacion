@@ -76,7 +76,7 @@ h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.03em}
 .items{margin-bottom:24px;color:var(--tinta);font-size:1.07rem;line-height:1.9}
 .items li{display:inline-block;max-width:100%}
 .items li:not(:last-child)::after{content:"·";color:var(--rojo);font-weight:700;margin:0 10px}
-/* Inflables: A = foto principal y dos pequeñas (por defecto), B = una sola foto combinada, C = tres fotos iguales a lo ancho */
+/* Inflables: B = una sola foto combinada (por defecto, clase inf-b), A = foto principal y dos pequeñas, C = tres fotos iguales a lo ancho */
 .inf-vis{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .inf-vis figure{margin:0}
 .inf-vis figcaption{margin-top:8px;font-size:.92rem;font-weight:600;color:var(--tinta)}
@@ -251,7 +251,7 @@ footer img{height:38px}
           <a class="enlace" data-wa="catering" href="#" target="_blank" rel="noopener">Cotizar brunch<svg><use href="#i-flecha"/></svg></a>
         </div>
       </article>
-      <article class="linea" id="inflables">
+      <article class="linea inf-b" id="inflables">
         <div class="linea-vis inf-vis">
           <figure class="inf-p"><img src="assets/img/foto-inflables.webp" alt="Arco inflable a motor con el logo de Gonflé en una activación de marca" loading="lazy"><figcaption>Inflables a motor</figcaption></figure>
           <figure class="inf-s"><img src="assets/img/foto-inf-golpeadores.webp" alt="Golpeadores inflables con el logo de Gonflé en un estadio" loading="lazy"><figcaption>Golpeadores en válvula</figcaption></figure>
@@ -371,9 +371,9 @@ const MENSAJES = {
   impresos: "Hola Gonflé, quiero cotizar impresos, empaques o material POP con mi marca.",
   bienestar: "Hola Gonflé, quiero contarles un proyecto especial para mi empresa.",
 };
-// ?inflables=b (una foto combinada) o ?inflables=c (tres fotos a lo ancho); por defecto, foto principal y dos pequeñas
+// Inflables: por defecto una foto combinada (B); ?inflables=a muestra foto principal y dos pequeñas, ?inflables=c tres fotos a lo ancho
 const vInf = new URLSearchParams(location.search).get("inflables");
-if (vInf === "b" || vInf === "c") document.getElementById("inflables").classList.add("inf-" + vInf);
+if (vInf === "a" || vInf === "c") { const s = document.getElementById("inflables"); s.classList.remove("inf-b"); if (vInf === "c") s.classList.add("inf-c"); }
 // ?fotos=gemini muestra la versión anterior de las imágenes (Gemini), guardada como respaldo
 if (new URLSearchParams(location.search).get("fotos") === "gemini") {
   document.querySelectorAll('img[src*="assets/img/foto-"]').forEach((i) => { i.src = i.getAttribute("src").replace("assets/img/foto-", "assets/img/gemini/foto-"); });
