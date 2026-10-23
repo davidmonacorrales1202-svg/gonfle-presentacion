@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página no encontrada | Gonflé</title>
+<meta name="robots" content="noindex">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--rojo:#EB0045;--amarillo:#FEE123;--tinta:#1E1630;--texto:#4A4458}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-family:"Poppins",system-ui,sans-serif;color:var(--texto);background:#fff}
+:focus-visible{outline:3px solid #1E1630;outline-offset:3px}
+header{border-bottom:1px solid #E8E3EE;padding:16px 20px}
+header img{height:48px;display:block}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 20px}
+.caja{max-width:560px}
+.num{font-size:5rem;font-weight:800;line-height:1;color:var(--rojo);letter-spacing:-.04em}
+h1{color:var(--tinta);font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:12px 0}
+h1 u{text-decoration:underline;text-decoration-color:var(--amarillo);text-decoration-thickness:.32em;text-underline-offset:-.2em;text-decoration-skip-ink:none}
+p{font-size:1.05rem;line-height:1.6;margin:0 0 28px}
+.acc{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--tinta);color:var(--tinta)}
+.btn.rojo{background:var(--rojo);border-color:var(--rojo);color:#fff}
+@media (max-width:480px){.btn{width:100%}}
+</style>
+</head>
+<body>
+<header><a href="/" aria-label="Ir al inicio de Gonflé"><img src="/assets/img/logo-gonfle-360.png" alt="Gonflé"></a></header>
+<main>
+  <div class="caja">
+    <div class="num" aria-hidden="true">404</div>
+    <h1>Esta página <u>no existe</u>.</h1>
+    <p>Es posible que el enlace esté mal escrito o que la página haya cambiado de lugar. Te llevamos a la presentación de Gonflé o puedes escribirnos directamente.</p>
+    <div class="acc">
+      <a class="btn rojo" href="/">Ir a la presentación</a>
+      <a class="btn" href="https://wa.me/573127576447?text=Hola%20Gonfl%C3%A9%2C%20quiero%20conversar%20sobre%20un%20proyecto%20para%20mi%20empresa." target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

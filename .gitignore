@@ -1,0 +1,17 @@
+# Carpetas de trabajo que NO deben publicarse en gonflegroup.com
+descargas/
+fuentes/
+comparar/
+whatsapp/
+# Archivos privados o de trabajo, en cualquier carpeta
+*.ogg
+*.opus
+*.mp3
+*.m4a
+*.mp4
+*.docx
+*.doc
+*.xlsx
+*.ai
+*.psd
+*.zip
