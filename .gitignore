@@ -2,7 +2,8 @@
 descargas/
 fuentes/
 comparar/
-whatsapp/
+whatsapp/*
+!whatsapp/index.html
 # Archivos privados o de trabajo, en cualquier carpeta
 *.ogg
 *.opus
